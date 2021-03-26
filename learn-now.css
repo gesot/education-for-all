@@ -1,0 +1,277 @@
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+.top-navigate{
+  background: #333;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: sticky;
+  float: right;
+  right:50px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-navigate i{
+
+  font-size: 40px;
+}
+
+/* Body styling */
+html,body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7em;
+  background: #f2f2f2;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* Links styling */
+a{
+  color: #fff;
+  text-decoration: none;
+}
+/* Navigation bar styling */
+#navibar {
+  background: #204959;
+  color: #fff;
+  overflow:auto;
+}
+/* Logo floats left */
+#navibar h1{
+  float: left;
+}
+/* Logo colour-padding-font size */
+.logo a , .logo{
+  color: #f2f0d0;
+  padding-top: 38px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+/* navigation list to the right */
+#navibar ul{
+  float:right;
+  list-style: none;
+}
+#navibar ul li{
+  float:left;
+}
+/* links of navigation bar block display for padding */
+#navibar ul li a{
+  display: block;
+  padding: 40px;
+  font-size: 20px;
+}
+/* hover and current used effects */
+#navibar ul li a:hover,
+#navibar ul li a.used-now  {
+  background: #333;
+  color: #f2f0d0 ;
+}
+/* clear float */
+
+
+/* inserting background header img */
+.header-img{
+  height: 96vh;
+  background: url('../img/d3.jpg') no-repeat  center/cover;
+  display: flex;
+  align-items: center ;
+  justify-content: center; 
+
+}
+
+
+/* header text */
+.header-img .img-content h1{
+  text-align: center;
+  color:#fff;
+  font-size: 100px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.35;
+}
+/* paragraph below header */
+.header-img .img-content p{
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  font-size:30px;
+  line-height: 1.25;
+}
+/* Color of some text-will use later */
+.primary-color{
+  color: coral;
+}
+.buttons-container{
+  text-align: center;
+  margin-top: 42px;
+}
+.header-img .img-content a{
+  display: inline-block;
+  margin:25px;
+  padding: 12px 34px;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #204959;
+  color: #fff;
+  border:rgb(107, 107, 107) solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-img .img-content a:hover{
+  background:#5594ad;
+  color:#fefefe;
+}
+
+.header-img .img-content a:focus{
+  outline:none!important;
+}
+
+@media screen and (max-width: 587px){
+  .buttons-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 30px auto 0;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .img-content h1{
+    font-size: 80px!important;
+  }
+}
+
+/* About toplist */
+.text-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin:30px;  
+}
+/* about toplist-main text */
+
+.main-text h2{
+  font-size: 65px;
+  line-height: 1.67;
+  margin-bottom: 0.5em;
+}
+
+.text-container .main-text p{
+  width: 60%;
+  margin:auto;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  
+}
+.ages-header{
+  text-align: center;
+  font-size: 65px;
+  line-height: 1.6em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 100px;
+  color: white;
+}
+
+
+/* CARD-AREA */
+
+.kids-area-container {
+  display: flex; 
+  vertical-align:middle;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+
+.card {
+  background: #eeeeee;
+  border-radius: 10px;
+  width: 33%;
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
+  box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
+  margin-right: 70px;
+}
+
+.card:hover{
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47);
+  box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47)
+}
+
+.card-body{
+  max-width: 100%;
+}
+
+.card-header img{
+  max-width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-link{
+  color: #316174;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  display: block;
+  width: fit-content;
+  margin-top:20px;
+  margin-left:20px;
+}
+.card .card-link:hover{
+  color: #204959;
+}
+.card p{
+  padding: 20px;
+  max-width: 100%;
+}
+
+.card-footer{
+  margin-bottom: 15px;
+}
+
+.card-footer a{
+  padding: 20px;
+  font-size: 20px;
+  color: #316174;
+  letter-spacing: 3px;
+  font-family: cursive;
+}
+
+.card-footer a:hover{
+  color: #204959;
+}
+
+.cards-area{
+  background-color: #204959b5;
+  padding: 200px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
