@@ -80,7 +80,7 @@ a{
 /* inserting background header img */
 .header-img{
   height: 96vh;
-  background: url('../img/d3.jpg') no-repeat  center/cover;
+  background: url('../images/d3.jpg') no-repeat  center/cover;
   display: flex;
   align-items: center ;
   justify-content: center; 
