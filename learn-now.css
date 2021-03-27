@@ -26,7 +26,7 @@
 
 /* Body styling */
 html,body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.7em;
   background: #f2f2f2;
   height: 100%;
@@ -207,11 +207,22 @@ a{
   box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47)
 }
 
-.card-body{
+.card .card-body{
   max-width: 100%;
 }
+.card .card-body .top-numbers{
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  min-width: 2rem;
+  text-align: center;
+  color: #f4f4f4;
+  line-height: 2rem;
+  background-color:#204959;
+}
 
-.card-header img{
+.card .card-header img{
+  max-height: 600px;
   max-width:100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -222,32 +233,31 @@ a{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 32px;
-  display: block;
+  display: inline-block;
   width: fit-content;
-  margin-top:20px;
-  margin-left:20px;
+  margin-top:5px
+  
 }
 .card .card-link:hover{
   color: #204959;
 }
-.card p{
-  padding: 20px;
+.card .card-body p{
+  padding: 10px 20px;
   max-width: 100%;
 }
 
-.card-footer{
-  margin-bottom: 15px;
+.card .card-footer{
+  padding: 15px;
 }
 
-.card-footer a{
-  padding: 20px;
+.card .card-footer a{
   font-size: 20px;
   color: #316174;
   letter-spacing: 3px;
   font-family: cursive;
 }
 
-.card-footer a:hover{
+.card .card-footer a:hover{
   color: #204959;
 }
 
