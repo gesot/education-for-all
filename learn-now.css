@@ -30,7 +30,8 @@ html,body{
   line-height: 1.7em;
   background: #f2f2f2;
   height: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+  
 }
 /* Links styling */
 a{
@@ -93,7 +94,7 @@ a{
   text-align: center;
   color:#fff;
   font-size: 100px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.35;
 }
 /* paragraph below header */
@@ -118,7 +119,7 @@ a{
   padding: 12px 34px;
   font-size: 26px;
   font-weight: 400;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #204959;
   color: #fff;
   border:rgb(107, 107, 107) solid 2px;
@@ -169,16 +170,16 @@ a{
   width: 60%;
   margin:auto;
   line-height: 1.6;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   
 }
 .ages-header{
   text-align: center;
-  font-size: 65px;
+  font-size: 70px;
   line-height: 1.6em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 80px;
   color: white;
 }
 
@@ -186,21 +187,18 @@ a{
 /* CARD-AREA */
 
 .kids-area-container {
-  display: flex; 
-  vertical-align:middle;
-  justify-content: space-around;
-  width: 70%;
+  display: block; 
   margin: auto;
+  width: 30%;
 }
 
 .card {
   background: #eeeeee;
   border-radius: 10px;
-  width: 33%;
   -webkit-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
   -moz-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
   box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
-  margin-right: 70px;
+  margin-bottom: 50px;
 }
 
 .card:hover{
@@ -221,7 +219,7 @@ a{
 
 .card .card-link{
   color: #316174;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 32px;
   display: block;
