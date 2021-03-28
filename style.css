@@ -781,3 +781,55 @@ footer center {
 footer .row > div {
   margin-top: 30px;
 }
+
+
+
+
+/* Information Page Styling */
+
+.info-container{
+  position:relative;
+  text-align: center;
+}
+
+.info-img{
+
+  display: block;
+}
+
+.centeredinfotext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#011649;
+  font-size: 2.8vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 9px white;
+}
+
+.post-container{
+  display: flex;
+  overflow: auto ;
+}
+
+.post-thumb{
+  float: left;
+}
+
+.post-thumb img{
+ 
+  width: 30vw;
+}
+
+.post-content{
+  margin-left: 2vh;
+  
+}
+
+.post-title{
+  
+  font-weight: bold;
+  font-size: 2vw;
+  color: black;
+}
