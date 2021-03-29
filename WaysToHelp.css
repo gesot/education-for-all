@@ -1,74 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif; /*Γραμματοσειρά*/
+  color: white;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
 body {
-  background-color: #f2f0d0;
+  background: #f2f0d0;
+  align-items: center;
 }
 
+h2 {
+  color: #011640;
+}
+
+p {
+  color: #011640;
+}
+
+/*----------START of MENU-----------*/
+nav {
+  background: #204959;
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+  margin-top: 10px;
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  z-index: 100;
+  margin-top: 10px;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: #204959;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 15px;
+}
+nav ul li a:hover {
+  color: cyan;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+}
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 2px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.5s;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul ul li a {
+  line-height: 50px;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,
+.icon,
+input {
+  display: none;
+}
+.fa-plus {
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+@media all and (max-width: 968px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 80px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}
+
+@media all and (max-width: 419px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 10px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}
+@media all and (max-width: 367px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}
+/*----------END of MENU-----------*/
+/*---------START of IMAGE--------*/
 .header {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(students.jpg);
+    url(images/book_pic.jpg);
+  background-color: #f2f0d0;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-  background: #011640;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-}
-
-nav img {
-  /* Μέγεθος του λογότυπου πάνω αριστερά*/
-  width: 120px;
-}
-
-.nav-links {
-  /*Θέση μενού πάνω δεξιά*/
-  flex: 1;
-  text-align: right;
-}
-
-.nav-links ul li {
-  /*Στυλ λίστας*/
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.nav-links ul li a {
-  /*Χρώμα μενού-λινκ και μέγεθος*/
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #fff;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
-}
 .text-box {
   width: 90%;
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,157 +352,112 @@ nav img {
 .text-box p {
   margin: 10px 0 40px;
   font-size: 14px;
-  color: #fff;
+  color: rgb(248, 248, 248);
 }
 
 .hero-btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  border: 1px solid #fff;
+  /*border: 1px solid rgb(224, 28, 28);*/
   padding: 12px 34px;
   font-size: 13px;
-  background: transparent;
+  background: rgb(62, 69, 170);
   position: relative;
   cursor: pointer;
 }
 
 .hero-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
-  transition: 1s;
+  border: 2px solid rgb(62, 69, 170);
+  background: rgb(255, 254, 255);
+  transition: 0.5s;
 }
 
 nav .fa {
   display: none;
 }
-
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
+/*-------------------------------------------------------*/
+.intro {
+  position: relative;
+  margin: 0 auto;
 }
 
-/*------Qoute-------*/
-.quote {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
+hr.top {
+  border: 1px solid rgb(62, 69, 170);
+  width: 12.5%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-width: 1px;
 }
-.quote .img {
-  width: 20px;
-}
-h1 {
-  font-size: 40px;
-  font-weight: 300;
-}
-
-p {
-  color: #777;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 25px;
-  margin: 10px;
-}
-
-/*-------Slideshow---------*/
-h2 {
+.intro {
   text-align: center;
 }
-.slideshow {
-  margin: auto;
+
+#main-body {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 150px;
+}
+.image {
+  width: 250px;
+  height: 250px;
+}
+.container {
   position: relative;
   width: 50%;
-  margin-bottom: 25px;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 50%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
 }
 
 .middle {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.left {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-.slideshow:hover .image {
+
+.container:hover .image {
   opacity: 0.3;
 }
 
-.slideshow:hover .middle {
+.container:hover .middle {
   opacity: 1;
 }
 
-.btext {
-  background-color: #1e90ff;
-  color: white;
+.text {
   font-size: 16px;
   padding: 16px 32px;
 }
+/*-------------------TAKE ACTION CSS----------------------*/
+h2.action {
+  margin-top: 30px;
+  text-align: center;
+}
 
-/*-------Slideshow---------*/
-/*-------FOOTER---------*/
-
+/*-------------------------------------------------------*/
 footer {
   position: relative;
-  bottom: 0px;
+  bottom: -100px;
   width: 100%;
-  background: #011640;
+  background: #000714;
 }
+footer h2,
+footer div,
+footer p {
+  color: #fff;
+}
+
 .main-content {
   display: flex;
 }
 .main-content .box {
-  flex-basis: 70%;
-  padding: 10px 50px;
+  flex-basis: 50%;
+  padding: 10px 30px;
 }
 .box h2 {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   color: #fff;
 }
@@ -260,29 +483,30 @@ footer {
 }
 .left .content p {
   text-align: justify;
+  color: #fff;
 }
-.left .content .social {
+.social {
   margin: 20px 0 0 0;
 }
-.left .content .social a {
+.social a {
   padding: 0 2px;
 }
-.left .content .social a span {
+.social a span {
   height: 40px;
   width: 40px;
-  background: #fff;
+  background: #042e82;
   line-height: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 18px;
   border-radius: 5px;
   transition: 0.3s;
 }
-.left .content .social a span:hover {
-  background: #f12020;
+.social a span:hover {
+  background: cyan; /*#f12020*/
 }
-.center .content .fas {
+.content .fa {
   font-size: 1.4375rem;
-  background: #fff;
+  background: #042e82;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -291,59 +515,59 @@ footer {
   transition: 0.3s;
   cursor: pointer;
 }
-.center .content .fas:hover {
+.content .fa:hover {
   background: #f12020;
 }
-.center .content .text {
+.content .text {
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
-  color: #fff;
 }
-.center .content .phone {
+.content .phone {
   margin: 15px 0;
 }
-.right form .text {
+footer form .text {
   font-size: 1.0625rem;
   margin-bottom: 2px;
   color: #fff;
 }
-.right form .msg {
-  margin-top: 10px;
+footer form .msg {
+  margin-top: 15px;
 }
-.right form input,
-.right form textarea {
+footer form input form textarea {
+  /*email και  κείμενο*/
   width: 100%;
   font-size: 1.0625rem;
   background: #fff;
   padding-left: 10px;
   border: 1px solid #222222;
+  color: #011640;
 }
-.right form input:focus,
-.right form textarea:focus {
+footer form input:focus,
+footer form textarea:focus {
   outline-color: #3498db;
 }
-.right form input {
+footer form input {
   height: 35px;
 }
-.right form .btn {
+footer form .btn {
   margin-top: 10px;
 }
-.right form .btn button {
+footer form .btn button {
   height: 40px;
   width: 100%;
   border: none;
   outline: none;
-  background: #f12020;
+  background: #042e82;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
-.right form .btn button:hover {
-  background: #000;
+footer form .btn button:hover {
+  background: #f12020;
 }
-.bottom center {
+footer center {
   padding: 5px;
   font-size: 0.9375rem;
   background: #151515;
@@ -359,16 +583,33 @@ footer {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
-  footer {
-    position: relative;
-    bottom: 0px;
-  }
-  .main-content {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main-content .box {
-    margin: 5px 0;
-  }
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #204959;
+  bottom: 50px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 100%;
+}
+
+.gotopbtn:hover {
+  background: #7ba6a1;
+}
+
+.aristotle {
+  position: relative;
+  background-color: #46629b;
+  color: #fff;
+  min-height: 200px;
+  text-align: left;
+}
+
+footer .row > div {
+  margin-top: 30px;
 }
