@@ -1,161 +1,386 @@
-<!DOCTYPE>
-<html>
-<head>
-	<!--The "rel" attribute defines the relationship between a linked resource and the current document-->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Education for All</title>
-	<link rel="stylesheet" href="WaysToHelp.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases.v5.6.3/css/all.css">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Education For All</title>
+		<link rel="stylesheet" href="WaysToHelp.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-
-<body>
-	<section class="header">
-		<nav>
-			<a href="index.html"><img src="logoo.png"></a>
-			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-					<ul> 
-						<li><a href="home.html">Home</a></li>
-						<li><a href="">Information</a></li>
-						<li><a href="WaysToHelp.html">Ways to help</a></li>
-						<li><a href="">Learn Now</a></li>
-						<li><a href="">Docs/Films/Series</a></li>
-						<li><a href="">Contact Us</a></li>
-						<li><a href="">Log In/Register</a></li>
-					</ul>
-			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		
-	<div class="text-box">
-		<h1>Interested in helping advance the right to education?</h1>
-		<p>KEIMENO</p>
-		<a href="" class="hero-btn">Learn How!</a>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<div class="logo">EducationForAll</div>
+				<label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+				</label>
+				<input type="checkbox" id="btn">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li>
+						<label for="btn-1" class="show">Information +</label>
+						<a href="#">Information<span class="fa fa-caret-down"></span></a>
+						<input type="checkbox" id="btn-1">
+						<ul>
+							<li><a href="#">Category1</a></li><!--ΘΑ ΣΤΕΛΝΟΥΝ ΣΕ ΛΙΝΚ-->
+							<li><a href="#">Category2</a></li>
+							<li><a href="#">Category3</a></li>
+						</ul>
+					</li>
+					<li>
+						<label for="btn-2" class="show">Services +</label>
+						<a href="WaysToHelp.html">Ways to Help<span class="fa fa-caret-down"></span></a>
+						<input type="checkbox" id="btn-2">
+						<ul>
+							<li><a href="#">Category1</a></li>
+							<li><a href="#">Category2</a></li>
+							<li>
+							<label for="btn-3" class="show">More +</label>
+							<a href="#">Learn Now <i style="transform: rotate( -90deg);" class="fa fa-caret-down"></i></a>
+							<input type="checkbox" id="btn-3">
+							<ul>
+								<li><a href="#">Submenu-1</a></li>
+								<li><a href="#">Submenu-2</a></li>
+								<li><a href="#">Submenu-3</a></li>
+							</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Docs/Films/Series</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Sign In/ Log In</a></li>
+				</ul>
+			</nav>
+		</section>
+		<div class="text-box">
+				<h1>Interested in helping advance the right to education?</h1>
+				<br><br>
+				<a class="hero-btn">Learn how!</a>
+		</div>
+		
+    <!----------------------- MY PART ----------------------->
+	<section class="main-body">
+	<hr class="top">
+	<div class="intro" style='margin-top:30px;'>
+			<p style="font-size:22px;font-family:sans-serif">
+				The right to education is a notion that many take for granted. <br>
+				Yet millions of children and adults remain deprived of educational opportunities, 				
+				<br> many as a result of social, cultural and economic factors.<br>
+				Taking simple actions in your daily life can have a major impact <br>on an ordinary citizen, 
+				local communities and beyond.
+			</p> 		
+	</div>
+	<hr class="top">
+    <div class="container" id="main-body" style='margin-top:80px;'><!--ΕΙΚΟΝΑ ΜΕ ΚΕΙΜΕΝΟ-->
+		<div class="row" >
+			<div class="col-md-4">
+				<img class='img-fluid' src="images/unicef_logo.png">
+			</div>	
+			<div class="col-md-6">
+				<h2>Are you a teacher?</h2>
+					<p>
+						Teachers are one of the most influential and powerful forces for equity, 
+						access and quality in education. They can play a major role in shifting mindsets in
+						 their communities and empowering girls and boys to learn, dream and succeed.
+						  Teachers can tackle many of the obstacles blocking children from accessing education,
+						 and alert relevant authorities if their right to education is being violated or denied.
+					</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<br> <br> <br>
+				<img class='img-fluid' src="images/unicef_logo.png">
+			</div> 
+			<div class="col-md-6">
+				<br> <br> <br>
+				<h2>Are you a student?</h2>
+				<p>
+					Helping peers to stay motivated and focused in school can go a long way in ensuring 
+					individuals’ right to education. Many children drop out of school for different reasons, 
+					and it is usually never their choice. Fellow students can help, encourage and influence 
+					their classmates to stay in school and alert relevant 
+					authorities if they witness that their right to education is being violated or denied.
+				</p>
+			</div>
+		</div>
+		<div class="row" >
+			<div class="col-md-4">
+				<br> <br> <br>
+				<img class='img-fluid' src="images/unicef_logo.png">
+			</div>	
+			<div class="col-md-6">
+				<br> <br> <br>
+				<h2>Are you a teacher?</h2>
+					<p>
+						Teachers are one of the most influential and powerful forces for equity, 
+						access and quality in education. They can play a major role in shifting mindsets in
+						 their communities and empowering girls and boys to learn, dream and succeed.
+						  Teachers can tackle many of the obstacles blocking children from accessing education,
+						 and alert relevant authorities if their right to education is being violated or denied.
+					</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<br> <br> <br>
+				<img class='img-fluid' src="images/unicef_logo.png">
+			</div> 
+			<div class="col-md-6">
+				<br> <br> <br>
+				<h2>Are you a student?</h2>
+				<p>
+					Helping peers to stay motivated and focused in school can go a long way in ensuring 
+					individuals’ right to education. Many children drop out of school for different reasons, 
+					and it is usually never their choice. Fellow students can help, encourage and influence 
+					their classmates to stay in school and alert relevant 
+					authorities if they witness that their right to education is being violated or denied.
+				</p>
+			</div>
+		</div>
+		<div class="row" style='margin-top:50px;'><!--ΚΕΙΜΕΝΟ ΜΕ ΕΙΚΟΝΑ-->
+		</div>
+	</div>
+	<!------------------TAKE ACTION PART----------------------->
+	<hr class="top">
+	<h2 class="action">TAKE ACTION NOW!</h2>
+	<div class="container" id="take-action" style="background-color: white;">
+		<div class="row">
+			<div class="col-md-5">
+			
+
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				
+			</div>
+			<div class="col-md-5">
+				
+			</div>
+
+		</div>
+	</div>
 	</div>
 
+
+
+
+	
+	<!--------------PHOTO GALLERY-------------------->
+	<div class="container-fluid" id="gallery">
+		<hr />
+		<h2>Recommendations</h2>
+		<div class="row" style="margin-left: 260px; margin-top: 100px">
+		  <div class="col-xs-4">
+			<div class="container">
+			  <img
+				src="images/unicef_logo.png"
+				alt="Avatar"
+				class="image"
+				style="width: 100%"
+			  />
+			  <div class="middle">
+				<div class="text"><button class="btn btn-outline-primary" >
+					<a href="https://www.unicef.org/about-unicef/unicef-logo-history">Learn more!</a>
+				</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-xs-4" >
+			<div class="container">
+			  <img
+				src="images/unicef_logo.png"
+				alt="Avatar"
+				class="image"
+				style="width: 100%"
+			  />
+			  <div class="middle">
+				<div class="text"><button class="btn btn-outline-primary" >
+					<a href="https://www.unicef.org/about-unicef/unicef-logo-history">Learn more!</a>
+				</button>
+			</div>
+			  </div>
+			</div>
+		</div>
+		  <div class="col-xs-4">
+			<div class="container">
+			  <img
+			  src="images/unicef_logo.png"
+
+				alt="Avatar"
+				class="image"
+				style="width: 100%"
+			  />
+			  <div class="middle">
+				<div class="text"><button class="btn btn-outline-primary" >
+					<a href="https://www.unicef.org/about-unicef/unicef-logo-history">Volunteer!</a>
+				</button>
+			</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-xs-4">
+			<div class="container">
+			  <img
+			  src="images/unicef_logo.png"
+
+				alt="Avatar"
+				class="image"
+				style="width: 100%"
+			  />
+			  <div class="middle">
+				<div class="text"><button class="btn btn-outline-primary" >
+					<a href="https://www.unicef.org/about-unicef/unicef-logo-history">Donate!</a>
+				</button>
+			</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
 	</section>
-	
-	<!-----Qoute----->
-	
-	<div class="quote">
-		<h1>«Της παιδείας οι ρίζες είναι πικρές, μα οι καρποί γλυκοί».</h1>
-		<p>Αριστοτέλης</p>
-		<img src="aristotle.png" style=" height: 150px; left: 1000px;">
+    <!----------------------- MY PART ----------------------->
+		
+	<!--JAVASCRIPT ΓΙΑ ΕΝΑΛΛΑΓΕΣ SLIDE-->
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('.slide');
+		var btns = document.querySelectorAll('.btn');
+		let currentSlide = 1;
+
+		// Javascript for image slider manual navigation
+		var manualNav = function(manual){
+		slides.forEach((slide) => {
+			slide.classList.remove('active');
+
+			btns.forEach((btn) => {
+			btn.classList.remove('active');
+			});
+		});
+
+		slides[manual].classList.add('active');
+		btns[manual].classList.add('active');
+		}
+
+		btns.forEach((btn, i) => {
+		btn.addEventListener("click", () => {
+			manualNav(i);
+			currentSlide = i;
+		});
+		});
+
+		// Javascript for image slider autoplay navigation
+		var repeat = function(activeClass){
+		let active = document.getElementsByClassName('active');
+		let i = 1;
+
+		var repeater = () => {
+			setTimeout(function(){
+			[...active].forEach((activeSlide) => {
+				activeSlide.classList.remove('active');
+			});
+
+			slides[i].classList.add('active');
+			btns[i].classList.add('active');
+			i++;
+
+			if(slides.length == i){
+			i = 0;
+			}
+			if(i >= slides.length){
+			return;
+			}
+			repeater();
+		}, 10000);
+		}
+		repeater();
+		}
+		repeat();
+		
+		$('.icon').click(function(){
+			$('span').toggleClass("cancel");
+		});
+	</script>
+
+		<!--------END of CONTEINER--------->
+  
+		<!---------START OF FOOTER---------->
+		
+		<footer>
+		<div class="container-fluid" style='margin-top:40px; padding:20px;'>
+
+		  <div class="row">
+			<div class="col-12 col-md-4">
+			  <h2>About us</h2>
+			  <div class="content">
+				<p>Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης<br>Τμήμα Πληροφορικής<br>Στόχοι Αειφόρου Ανάπτυξης ΟΗΕ<br>Καλή Υγεία και Ευημερία</p>
+				<div class="social">
+				  <a href="https://facebook.com"><span class="fa fa-facebook-f"></span></a>
+				  <a href="https://twitter.com"><span class="fa fa-twitter"></span></a>
+				  <a href="https://instagram.com"><span class="fa fa-instagram"></span></a>
+				  <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-12 col-md-4">
+			  <h2>Address</h2>
+			  <div class="content">
+				<div class="place">
+				  <span class="fa fa-map"></span>
+				  <span class="text">Thessaloniki, Greece</span>
+				</div>
+				<div class="phone">
+				  <span class="fa fa-phone"></span>
+				  <span class="text">+30 2310 235 412</span>
+				</div>
+				<div class="email">
+				  <span class="fa fa-envelope"></span>
+				  <span class="text">email@csd.auth.gr</span>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-12 col-md-4">
+			  <h2>Contact us</h2>
+			  <div class="content">
+				<form action="#">
+				  <div class="email">
+					<div class="text">Email *</div>
+					<input type="email" required>
+					<textarea rows="1" cols="25" required></textarea>
+				  </div>
+				  <div class="msg">
+					<div class="text">Message *</div>
+					<textarea rows="2" cols="25" required></textarea>
+				  </div>
+				  <div>
+					<button class="btn btn-primary" type="submit">Send</button>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm text-center">
+			  <span class="credit">Created By Aristotle University of Thessaloniki</a> | </span>
+			  <i class="fa fa-copyright" aria-hidden="true"></i><span> 2021 All rights reserved.</span>
+		  </div>
+		  </div>
 	</div>
-	<br><br>
-	<hr>
-  <br><br>
-	<br><br>
-
-  <h2>Fade in a Box</h2>
-  <div class="slideshow">
-    <img
-      src="uniceflogo.png"
-      alt="Avatar"
-      class="image"
-      width="150" height="120"
-    />
-    <div class="middle">
-      <h4>asdasgasdfgas</h4>
-      <div class="btext"> 
-        <a href="https://www.unicef.org/about-unicef/unicef-logo-history" target="_blank">
-          Learn More</a> </div>
-    </div>
-  </div>
-  <div class="slideshow">
-    <img
-      src="uniceflogo.png"
-      alt="Avatar"
-      class="image"
-      width="150" height="120"
-    />
-    <div class="middle">
-      <h4>asdasgasdfgas</h4>
-      <div class="btext"> 
-        <a href="https://www.unicef.org/about-unicef/unicef-logo-history" target="_blank">
-          Learn More</a> </div>
-    </div>
-  </div>
-
-
-</body>
-<!-------FOOTER--------->
-
-<footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2>About us</h2>
-          <div class="content">
-            <p1>Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης<br>Τμήμα Πληροφορικής<br>Στόχοι Αειφόρου Ανάπτυξης ΟΗΕ<br>Καλή Υγεία και Ευημερία</p1>
-            <div class="social">
-              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
-              <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="center box">
-          <h2>Address</h2>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Thessaloniki, Greece</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">+30 2310 255 255</span>
-            </div>
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">email@csd.auth.gr</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="right box">
-          <h2>Contact us</h2>
-          <div class="content">
-            <form action="#">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required>
-              </div>
-              <div class="msg">
-                <div class="text">Message *</div>
-				<input type="Message" required>
-              </div>
-              <div class="btn">
-                <button type="submit">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <center>
-          <span class="credit">Created By Aristotle University of Thessaloniki</a> | </span>
-          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
-        </center>
-      </div>
 </footer>
-
-
+		<!--------END OF FOOTER---------->
+		
+		
+		<!---------START OF <TOP> BUTTON--------->
+		<a href="#"><i class="gotopbtn" href="#"><i class="fa fa-arrow-circle-up"></i></i></a>
+		<!----------END OF TOP BUTTON---------->
+	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
