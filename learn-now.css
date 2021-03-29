@@ -5,7 +5,8 @@
   margin: 0;
   box-sizing: border-box; 
 }
-.top-navigate{
+
+/* .top-navigate{
   background: #333;
   width: 100px;
   height: 100px;
@@ -22,7 +23,7 @@
 .top-navigate i{
 
   font-size: 40px;
-}
+} */
 
 /* Body styling */
 html,body{
@@ -33,6 +34,34 @@ html,body{
   scroll-behavior: smooth; 
   
 }
+
+
+/* .sticky {
+
+  position: -webkit-sticky; 
+  position: sticky;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(100%);
+  top: 50%;
+  background: rgb(219, 215, 213);
+  float:right;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  height: 100px;
+  width:300px;
+  font-family: 'Roboto', sans-serif;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+ }  
+
+.sticky h2{
+  padding: 10px;
+}  */
+
+
+
 /* Links styling */
 a{
   color: #fff;
@@ -159,10 +188,10 @@ a{
 
 /* About toplist */
 .text-container {
-  display: flex;
+  display:inline-block;
   text-align: center;
-  justify-content: center;
-  margin:30px;  
+  margin: 50px;
+
 }
 /* about toplist-main text */
 
@@ -182,12 +211,14 @@ a{
 }
 .ages-header{
   text-align: center;
-  font-size: 85px;
+  font-family: cursive;
+  font-size: 80px;
   line-height: 1.6em;
-  font-family: 'Roboto', sans-serif;
   margin-bottom: 80px;
-  color: rgb(233, 231, 231);
+  color: rgb(241, 241, 241);
 }
+
+
 
 
 /* CARD-AREA */
@@ -199,8 +230,22 @@ a{
 }
 
 .cards-area{
-  background-color: #2a5b6e;
-  padding: 100px 0;
+  
+  padding: 100px 0px; 
+}
+.cards-area:last-child{
+  padding-bottom: 0px;
+}
+
+#kids-section{
+  background-color: #2b5f74;
+}
+#teenagers-section{
+  background-color:  #275466;
+  ;  
+}
+#adults-section{
+  background-color:#1c4858 ;
 }
 .card {
   background: #eeeeee;
@@ -222,8 +267,9 @@ a{
 }
 .card .card-body .top-numbers{
   display: inline-block;
-  padding: 5px;
-  margin: 5px;
+  padding: 3px;
+  margin: 10px;
+  margin-left:20px;
   min-width: 2rem;
   text-align: center;
   color: #f4f4f4;
