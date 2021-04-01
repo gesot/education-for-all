@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Log In/Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="register.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	 <body>
+		<!------------------------------------------------------------------------>
+		
+		<div class="container">
+			<div class="card">
+				<div class="inner-box" id="card">
+					<div class="card-front">
+						<h3>LOGIN</h3>
+						<form>
+							<input type="email" class="input-box" placeholder="Your Email Id" required>
+							<input type="password" class="input-box" placeholder="Password" required>
+							<button type="submit" class="submit-btn">Submit</button>
+							<input type="checkbox"><span>Remember Me</span>
+						</form>
+						<button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+						<a href="">Forgot Password</a><br><br>
+						<a href="index.html">Go to Home Page</a>
+					</div>
+					<div class="card-back">
+						<h3>REGISTER</h3>
+						<form>
+							<input type="text" class="input-box" placeholder="Your Name" required>
+							<input type="email" class="input-box" placeholder="Your Email" required>
+							<input type="password" class="input-box" placeholder="Password" required>
+							<button type="submit" class="submit-btn">Submit</button>
+							<input type="checkbox"><span>Remember Mer</span>
+						</form>
+						<button type="button" class="btn" onclick="openLogin()">I've an account</button>
+						<a href="">Forgot Password</a><br><br>
+						<a href="index.html">Go to Home Page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var card = document.getElementById("card");
+			
+			function openRegister(){
+			card.style.transform = "rotateY(-180deg)";
+			}
+			function openLogin(){
+			card.style.transform = "rotateY(0deg)";
+			}
+		</script>
+		
+	</body>
+</html>
