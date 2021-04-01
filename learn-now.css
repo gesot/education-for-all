@@ -114,7 +114,6 @@ a{
   display: flex;
   align-items: center ;
   justify-content: center; 
-
 }
 
 
@@ -172,13 +171,44 @@ a{
 }
 
 @media screen and (max-width: 587px){
+body{
+  overflow-x: hidden;
+}
   .buttons-container{
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 30px auto 0;
   }
-}
+  .header-img{
+    height: 96vh;
+  background: url('../images/d3.jpg') no-repeat  center/cover;
+  }
+ 
+   .text-container .main-text h2{    
+     font-size: 30px;
+   }
+   .text-container .main-text p{
+     width: 100%!important;
+     text-align: left;
+   }
+   .cards-area-container {
+     
+      display: block; 
+      margin: auto;
+      width: 100%!important;
+      padding: 8px;
+    }  
+    .card .ages-header{
+      font-size: 40px!important;
+      
+    } 
+    .card .card-link{
+      font-size:25px!important;
+    }
+  }
+  
+
 
 @media screen and (max-width: 1100px){
   .img-content h1{
@@ -199,16 +229,21 @@ a{
   font-size: 65px;
   line-height: 1.67;
   margin-bottom: 0.5em;
+  font-family: 'roboto',sans-serif;
 }
 
 .text-container .main-text p{
+  text-align: left;
+  color: #606362;
   width: 60%;
   margin:auto;
-  line-height: 1.6;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  
+  line-height: 1.875em;
+  font-size: 1.3em;
+  font-weight: 300;
+  font-family:'Kiwi Maru', serif;
 }
+
+
 .ages-header{
   text-align: center;
   font-family: cursive;
