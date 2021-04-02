@@ -89,13 +89,13 @@ button{
 	border: 1px solid rgb(88, 88, 88);;
 	margin: 35px 0 10px;
 	height: 38px;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	border-radius: 20px;
 	padding: 0 10px;
 	box-sizing: border-box;
 	outline: none;
-	color: #333;
+	color: #fff;
 	cursor: pointer;
 }
 button:hover{
