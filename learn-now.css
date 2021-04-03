@@ -1,250 +1,132 @@
-
-/* reset */
+/* reset all */
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-/* .top-navigate{
-  background: #333;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: sticky;
-  float: right;
-  right:50px;
-  bottom: 50px;
+/* Body styling */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7em;
+  background: #f2f2f2;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/*---------------- utilities------------- */
+/* Links styling */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Color of some text-will use later */
+
+.primary-color {
+  color: coral;
+}
+.secondary-color {
+  color: #aa783f;
+}
+.third-color {
+  color: aqua;
+}
+
+/* --------------------------------------------- */
+/* ---------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/* ------------------HEADER------------------------------- */
+/* inserting background header img */
+.header-img {
+  height: 96vh;
+  background: url("../images/d3.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.top-navigate i{
-
-  font-size: 40px;
-} */
-
-/* Body styling */
-html,body{
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.7em;
-  background: #f2f2f2;
-  height: 100%;
-  scroll-behavior: smooth; 
-  
-}
-
-
-/* .sticky {
-
-  position: -webkit-sticky; 
-  position: sticky;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(100%);
-  top: 50%;
-  background: rgb(219, 215, 213);
-  float:right;
-  text-align: center;
-  display: inline-block;
-  font-size: 18px;
-  height: 100px;
-  width:300px;
-  font-family: 'Roboto', sans-serif;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
- }  
-
-.sticky h2{
-  padding: 10px;
-}  */
-
-
-
-/* Links styling */
-a{
-  color: #fff;
-  text-decoration: none;
-}
-/* Navigation bar styling */
-#navibar {
-  background: #204959;
-  color: #fff;
-  overflow:auto;
-}
-/* Logo floats left */
-#navibar h1{
-  float: left;
-}
-/* Logo colour-padding-font size */
-.logo a , .logo{
-  color: #f2f0d0;
-  padding-top: 38px;
-  padding-left: 20px;
-  font-size: 30px;
-}
-/* navigation list to the right */
-#navibar ul{
-  float:right;
-  list-style: none;
-}
-#navibar ul li{
-  float:left;
-}
-/* links of navigation bar block display for padding */
-#navibar ul li a{
-  display: block;
-  padding: 40px;
-  font-size: 20px;
-}
-/* hover and current used effects */
-#navibar ul li a:hover,
-#navibar ul li a.used-now  {
-  background: #333;
-  color: #f2f0d0 ;
-}
-/* clear float */
-
-
-/* inserting background header img */
-.header-img{
-  height: 96vh;
-  background: url('../images/d3.jpg') no-repeat  center/cover;
-  display: flex;
-  align-items: center ;
-  justify-content: center; 
-}
-
-
 /* header text */
-.header-img .img-content h1{
+.header-img .img-content h1 {
   text-align: center;
-  color:#fff;
+  color: #fff;
   font-size: 100px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.35;
 }
 /* paragraph below header */
-.header-img .img-content p{
+.header-img .img-content p {
   text-align: center;
   padding-top: 50px;
   color: #fff;
-  font-size:30px;
+  font-size: 30px;
   line-height: 1.25;
 }
-/* Color of some text-will use later */
-.primary-color{
-  color: coral;
-}
-.secondary-color{
-  color: #aa783f;
-}
-.third-color{
-  color:aqua;
-}
-.buttons-container{
+/*------------------- END OF HEADER-------------- */
+
+/* ------------------------------------------- */
+/*------------------BUTTONS------------------- */
+.buttons-container {
   text-align: center;
   margin-top: 42px;
 }
-.header-img .img-content a{
+.header-img .img-content a {
   display: inline-block;
-  margin:25px;
+  margin: 10px;
   padding: 12px 34px;
   font-size: 26px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #204959;
   color: #fff;
-  border:rgb(107, 107, 107) solid 2px;
+  border: rgb(107, 107, 107) solid 2px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
 }
 
-.header-img .img-content a:hover{
-  background:#5594ad;
-  color:#fefefe;
+.header-img .img-content a:hover {
+  background: #5594ad;
+  color: #fefefe;
 }
 
-.header-img .img-content a:focus{
-  outline:none!important;
+.header-img .img-content a:focus {
+  outline: none !important;
 }
-
-@media screen and (max-width: 587px){
-body{
-  overflow-x: hidden;
-}
-  .buttons-container{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 30px auto 0;
-  }
-  .header-img{
-    height: 96vh;
-  background: url('../images/d3.jpg') no-repeat  center/cover;
-  }
- 
-   .text-container .main-text h2{    
-     font-size: 30px;
-   }
-   .text-container .main-text p{
-     width: 100%!important;
-     text-align: left;
-   }
-   .cards-area-container {
-     
-      display: block; 
-      margin: auto;
-      width: 100%!important;
-      padding: 8px;
-    }  
-    .card .ages-header{
-      font-size: 40px!important;
-      
-    } 
-    .card .card-link{
-      font-size:25px!important;
-    }
-  }
-  
-
-
-@media screen and (max-width: 1100px){
-  .img-content h1{
-    font-size: 80px!important;
-  }
-}
+/* --------------------------------------------------------- */
+/*------------------------ END OF BUTTONS----------------- */
 
 /* About toplist */
 .text-container {
-  display:inline-block;
+  display: inline-block;
   text-align: center;
   margin: 50px;
-
 }
 /* about toplist-main text */
 
-.main-text h2{
+.main-text h2 {
   font-size: 65px;
   line-height: 1.67;
   margin-bottom: 0.5em;
-  font-family: 'roboto',sans-serif;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
 }
 
-.text-container .main-text p{
+.text-container .main-text p {
   text-align: left;
   color: #606362;
   width: 60%;
-  margin:auto;
+  margin: auto;
   line-height: 1.875em;
   font-size: 1.3em;
   font-weight: 300;
-  font-family:'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
-
-.ages-header{
+.ages-header {
   text-align: center;
   font-family: cursive;
   font-size: 80px;
@@ -253,120 +135,138 @@ body{
   color: rgb(241, 241, 241);
 }
 
-
-
-
 /* CARD-AREA */
 
 .cards-area-container {
-  display: block; 
+  display: block;
   margin: auto;
   width: 40%;
 }
 
-.cards-area{
-  
-  padding: 100px 0px; 
+.cards-area {
+  padding: 100px 0px;
 }
-.cards-area:last-child{
+.cards-area:last-child {
   padding-bottom: 0px;
 }
 
-#kids-section{
+#kids-section {
   background-color: #2b5f74;
 }
-#teenagers-section{
-  background-color:  #275466;
-  ;  
+#teenagers-section {
+  background-color: #275466;
 }
-#adults-section{
-  background-color:#1c4858 ;
+#adults-section {
+  background-color: #1c4858;
 }
 .card {
   background: #eeeeee;
   border-radius: 10px;
-  -webkit-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
-  -moz-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
-  box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.26);
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.26);
   margin-bottom: 50px;
 }
 
-.card:hover{
-  -webkit-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47);
-  -moz-box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47);
-  box-shadow: -3px 4px 15px 0px rgba(0,0,0,0.47)
+.card:hover {
+  -webkit-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.47);
 }
 
-.card .card-body{
+.card .card-body {
   max-width: 100%;
 }
-.card .card-body .top-numbers{
+.card .card-body .top-numbers {
   display: inline-block;
   padding: 3px;
   margin: 10px;
-  margin-left:20px;
+  margin-left: 20px;
   min-width: 2rem;
   text-align: center;
   color: #f4f4f4;
   line-height: 2rem;
-  background-color:#204959;
+  background-color: #204959;
 }
 
-.card .card-header img{
+.card .card-header img {
   max-height: 700px;
-  width:100%;
+  width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.card .card-link{
+.card .card-link {
   color: #316174;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 32px;
   display: inline-block;
   width: fit-content;
-  margin-top:5px
-  
+  margin-top: 5px;
 }
-.card .card-link:hover{
+.card .card-link:hover {
   color: #204959;
 }
-.card .card-body p{
+.card .card-body p {
   padding: 10px 20px;
   max-width: 100%;
 }
 
-.card .card-footer{
+.card .card-footer {
   padding: 15px;
 }
 
-.card .card-footer a{
+.card .card-footer a {
   font-size: 20px;
   color: #316174;
   letter-spacing: 3px;
   font-family: cursive;
 }
 
-.card .card-footer a:hover{
+.card .card-footer a:hover {
   color: #204959;
 }
 
+/* MEDIA Q */
+@media screen and (max-width: 587px) {
+  body {
+    overflow-x: hidden;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 30px auto 0;
+  }
+  .header-img {
+    height: 96vh;
+    background: url("../images/d3.jpg") no-repeat center/cover;
+  }
 
+  .text-container .main-text h2 {
+    font-size: 30px;
+  }
+  .text-container .main-text p {
+    width: 100% !important;
+    text-align: left;
+  }
+  .cards-area-container {
+    display: block;
+    margin: auto;
+    width: 100% !important;
+    padding: 8px;
+  }
+  .card .ages-header {
+    font-size: 40px !important;
+  }
+  .card .card-link {
+    font-size: 25px !important;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1100px) {
+  .img-content h1 {
+    font-size: 80px !important;
+  }
+}
