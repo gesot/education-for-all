@@ -325,11 +325,16 @@ input {
 /*----------END of MENU-----------*/
 
 /*---------START of SLIDER--------*/
+
+.prim-color {
+  color: coral;
+}
+
 .img-slider {
   display: block;
   position: relative;
   width: 100%;
-  height: 850px;
+  height: 97vh;
   margin: 0px;
   background: #1d212b;
   overflow: hidden;
@@ -352,7 +357,7 @@ input {
   z-index: 1;
   width: 100%;
   /*border-radius: 5px;*/
-  filter: blur(3px);
+  filter: opacity(0.7);
 }
 
 .img-slider .slide .info {
@@ -364,14 +369,12 @@ input {
 }
 
 .img-slider .slide .info h2 {
+  letter-spacing: 5px;
   color: #fff;
-  font-size: 45px;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 100px;
+  font-weight: 400;
   text-align: center;
   padding-top: 300px;
-  padding-bottom: 10px;
 }
 
 /*----------START of BUTTON LEARN MORE--------*/
@@ -380,23 +383,25 @@ input {
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
+  margin-top: 40px;
   padding: 12px 34px;
-  font-size: 13px;
+  font-size: 15px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 
 .hero-btn:hover {
-  border: 1px solid #f44336;
-  background: cyan;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: #fff;
   transition: 1s;
 }
 /*----------END of BUTTON LEARN MORE--------*/
 
 .img-slider .slide .info p {
   color: #fff;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   font-size: 16px;
   width: 100%;
   border-radius: 4px;
@@ -407,7 +412,7 @@ input {
   z-index: 2;
   position: absolute;
   display: flex;
-  margin-top: 45%;
+  margin-top: 80vh;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -759,7 +764,8 @@ footer center {
 
 .aristotle {
   position: relative;
-  background-color: #011640;
+  background-image: linear-gradient(#606b80, #2c323a);
+
   color: #fff;
   min-height: 200px;
 }
@@ -768,12 +774,14 @@ footer center {
 }
 
 .quote {
+  margin-top: 40px;
+  margin-left: 30px;
   font-size: 20px;
   color: #ddd;
 }
 
 .quote cite {
-  font-size: 50px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -781,53 +789,46 @@ footer .row > div {
   margin-top: 30px;
 }
 
-
-
-
 /* Information Page Styling */
 
-.info-container{
-  position:relative;
+.info-container {
+  position: relative;
   text-align: center;
 }
 
-.info-img{
-
+.info-img {
   display: block;
 }
 
-.centeredinfotext{
+.centeredinfotext {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:#011649;
+  color: #011649;
   font-size: 2.8vw;
   font-weight: bold;
   text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 9px white;
 }
 
-.post-container{
+.post-container {
   display: flex;
-  overflow: auto ;
+  overflow: auto;
 }
 
-.post-thumb{
+.post-thumb {
   float: left;
 }
 
-.post-thumb img{
- 
+.post-thumb img {
   width: 30vw;
 }
 
-.post-content{
+.post-content {
   margin-left: 2vh;
-  
 }
 
-.post-title{
-  
+.post-title {
   font-weight: bold;
   font-size: 2vw;
   color: black;

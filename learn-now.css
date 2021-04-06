@@ -10,7 +10,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.7em;
-  background: #f2f2f2;
+  background: #fff;
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -41,8 +41,9 @@ a {
 /* ------------------HEADER------------------------------- */
 /* inserting background header img */
 .header-img {
-  height: 96vh;
-  background: url("../images/d3.jpg") no-repeat center/cover;
+  height: 65vh;
+  background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)),
+    url("../images/d3.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +54,7 @@ a {
   text-align: center;
   color: #fff;
   font-size: 100px;
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins", sans-serif;
   line-height: 1.35;
 }
 /* paragraph below header */
@@ -75,13 +76,13 @@ a {
 .header-img .img-content a {
   display: inline-block;
   margin: 10px;
-  padding: 12px 34px;
+  padding: 10px 34px;
   font-size: 26px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  background: #204959;
+  font-family: "poppins", sans-serif;
+  background: #424242;
   color: #fff;
-  border: rgb(107, 107, 107) solid 2px;
+  border: #fff solid 1px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -89,8 +90,8 @@ a {
 }
 
 .header-img .img-content a:hover {
-  background: #5594ad;
-  color: #fefefe;
+  background: #5a5a5a;
+  color: #fff;
 }
 
 .header-img .img-content a:focus {
@@ -148,6 +149,7 @@ a {
 }
 .cards-area:last-child {
   padding-bottom: 0px;
+  background-color: #fff;
 }
 
 #kids-section {
