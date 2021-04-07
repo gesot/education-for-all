@@ -388,14 +388,14 @@ input {
   border: 1px solid #fff;
   margin-top: 40px;
   padding: 12px 34px;
-  font-size: 15px;
+  font-size: 20px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 
 .hero-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   color: #fff;
   transition: 1s;
@@ -405,7 +405,7 @@ input {
 .img-slider .slide .info p {
   color: #fff;
   /* background: rgba(0, 0, 0, 0.1); */
-  font-size: 16px;
+  font-size: 30px;
   width: 100%;
   border-radius: 4px;
   text-align: center;
