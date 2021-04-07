@@ -77,13 +77,13 @@ a {
   display: inline-block;
   margin: 10px;
   padding: 10px 34px;
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   font-family: "poppins", sans-serif;
-  background: #424242;
-  color: #fff;
+  background: #fff;
+  color: #464646;
   border: #fff solid 1px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.2;

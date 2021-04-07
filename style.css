@@ -64,10 +64,12 @@ nav ul li a {
 nav ul li a:hover {
   color: cyan;
   border-radius: 20px;
+  text-decoration: none;
   box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
 }
 nav ul ul li a:hover {
   box-shadow: none;
+  text-decoration: underline;
 }
 nav ul ul {
   position: absolute;
@@ -363,18 +365,19 @@ input {
 .img-slider .slide .info {
   position: absolute;
   top: 0;
-  padding: 15px 30px;
+  padding: 30px 30px;
   width: 100%;
   text-align: center;
 }
 
 .img-slider .slide .info h2 {
-  letter-spacing: 5px;
+  letter-spacing: 0.5px;
   color: #fff;
   font-size: 100px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
-  padding-top: 300px;
+  padding-top: 350px;
+  margin-bottom: 0;
 }
 
 /*----------START of BUTTON LEARN MORE--------*/

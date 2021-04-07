@@ -40,14 +40,17 @@ nav ul li a {
   text-decoration: none;
   font-size: 15px;
   padding: 8px 15px;
+  text-decoration: none;
 }
 nav ul li a:hover {
   color: cyan;
   border-radius: 20px;
+  text-decoration: none;
   box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
 }
 nav ul ul li a:hover {
   box-shadow: none;
+  text-decoration: underline;
 }
 nav ul ul {
   position: absolute;
@@ -304,11 +307,8 @@ input {
   }
 }
 
-
-
 /* -------------------------------------------------------- */
 /*-------------- FOOTER STYLING ----------------------------*/
-
 
 footer {
   position: relative;
