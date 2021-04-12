@@ -184,7 +184,7 @@ input {
   }
 }
 
-@media all and (max-width: 419px) {
+@media all and (max-width: 430px) {
   nav ul {
     margin-right: 0px;
     float: left;
@@ -444,7 +444,7 @@ input {
   }
 
   .img-slider .slide .info h2 {
-    font-size: 35px;
+    font-size: 70px;
     padding-top: 30px;
   }
 
@@ -475,7 +475,7 @@ input {
   }
 
   .img-slider .slide .info h2 {
-    font-size: 35px;
+    font-size: 60px;
     padding-top: 10px;
   }
 
@@ -528,22 +528,32 @@ input {
 
 @media (max-width: 420px) {
   .img-slider {
-    width: 111%;
-    height: 200px;
+    width: 100%;
+    height: 250px;
+  }
+  .img-slider .slide img {
+    height: 250px;
   }
 
   .img-slider .slide .info {
     padding: 5px 10px;
   }
+  .img-slider .slide .info .hero-btn {
+    margin: 30px;
+    font-size: 10px;
+    padding: 10px 20px;
+  }
 
   .img-slider .slide .info h2 {
     padding-top: 10px;
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .img-slider .slide .info p {
-    width: 90%;
-    font-size: 11px;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
   }
 
   .img-slider .navigation {
@@ -554,7 +564,7 @@ input {
 @media (max-width: 320px) {
   .img-slider {
     width: auto;
-    height: 200px;
+    height: 250px;
   }
 
   .img-slider .slide .info {
@@ -562,7 +572,7 @@ input {
   }
 
   .img-slider .slide .info h2 {
-    font-size: 25px;
+    font-size: 30px;
     padding-top: 10px;
   }
 
