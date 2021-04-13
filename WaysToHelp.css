@@ -328,7 +328,7 @@ input {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/book_pic.jpg);
+    url(images/advance1.png);
   background-color: #f2f0d0;
   background-position: center;
   background-size: cover;
@@ -350,6 +350,7 @@ input {
 }
 
 .text-box p {
+  font-family: "Roboto", sans-serif;
   margin: 10px 0 40px;
   font-size: 14px;
   color: rgb(248, 248, 248);
@@ -380,8 +381,8 @@ nav .fa {
 .intro {
   position: relative;
   margin: 0 auto;
+  text-align: center;
 }
-
 hr.top {
   border: 1px solid rgb(62, 69, 170);
   width: 12.5%;
@@ -389,14 +390,47 @@ hr.top {
   margin-top: 30px;
   border-width: 1px;
 }
-.intro {
-  text-align: center;
+#main-content {
+  display: flex;
+  vertical-align: center;
+  margin: 0 auto;
 }
 
-#main-body {
-  position: relative;
+.main-photo {
+  width: 354px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-photo img {
+  margin-top: 0px;
+  display: flex;
+  vertical-align: middle;
   margin: 0 auto;
-  padding-left: 150px;
+  width: 354px;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.desc h4 {
+  color: rgb(54, 58, 110);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.responsive {
+  padding-top: 100px;
+  padding-left: 100px;
+  float: left;
+  width: 24%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .image {
   width: 250px;
@@ -430,12 +464,42 @@ hr.top {
   padding: 16px 32px;
 }
 /*-------------------TAKE ACTION CSS----------------------*/
-h2.action {
-  margin-top: 30px;
-  text-align: center;
+.take-action-now {
+  /*background-color: #33ffff;*/
+  margin-bottom: 0;
 }
 
-/*-------------------------------------------------------*/
+.take-action-now h2 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.take-action-now img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.take-action-now p {
+  color: rgba(4, 9, 30, 0.7);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/*--------------------RECCOMENDATIONS CSS----------------*/
+.reccomendations {
+  /*background-color: wheat;*/
+}
+.reccomendations h2 {
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.reccomendations .row {
+  margin: 0 auto;
+}
+/*------------------------------------------------------*/
+
 footer {
   position: relative;
   bottom: -100px;
