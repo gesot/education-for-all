@@ -5,10 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./learn-now.css">
+  <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Sofia&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <title>Learn-now</title>
 </head>
 <body>
@@ -17,28 +27,57 @@
     <!---------------------------------------------------->
     <!--------------------NAVIGATION BAR---------------->
     <nav id="navibar">
-    <div class="container">
-      <h1 class="logo"><a href="#">Education For All</a> </h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Information</a></li>
-        <li><a href="#">Ways To Help</a></li>
-        <li><a class="used-now" href="/learn-now.html">Learn Now</a></li>
-        <li><a href="#">Docs/Films/Series</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Log in/Register</a></li>       
-      </ul>
-      </div>
+      <div class="logo">EducationForAll</div>
+				<label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+				</label>
+				<input type="checkbox" id="btn">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li>
+						<label for="btn-1" class="show">Information +</label>
+						<a href="information.html">Information<span class="fa fa-caret-down"></span></a>
+						<input type="checkbox" id="btn-1">
+						<ul>
+							<li><a href="#">Category1</a></li><!--ΘΑ ΣΤΕΛΝΟΥΝ ΣΕ ΛΙΝΚ-->
+							<li><a href="#">Category2</a></li>
+							<li><a href="#">Category3</a></li>
+						</ul>
+					</li>
+					<li>
+						<label for="btn-2" class="show">Services +</label>
+						<a href="WaysToHelp.html">Ways to Help<span class="fa fa-caret-down"></span></a>
+						<input type="checkbox" id="btn-2">
+						<ul>
+							<li><a href="#">Category1</a></li>
+							<li><a href="#">Category2</a></li>
+							<li>
+							<label for="btn-3" class="show">More +</label>
+							<a href="learn-now.html">Learn Now <i style="transform: rotate( -90deg);" class="fa fa-caret-down"></i></a>
+							<input type="checkbox" id="btn-3">
+							<ul>
+								<li><a href="file:///C:/Users/dimip/Downloads/PSPI-master%20(3)/PSPI-master/learn-now.html#kids-section">Kids</a></li>
+								<li><a href="file:///C:/Users/dimip/Downloads/PSPI-master%20(3)/PSPI-master/learn-now.html#teenagers-section">Teenagers</a></li>
+								<li><a href="file:///C:/Users/dimip/Downloads/PSPI-master%20(3)/PSPI-master/learn-now.html#adults-section">Adults</a></li>
+							</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="learn-now.html">Learn Now</a></li>
+					<li><a href="#">Docs/Films/Series</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+					<li><a href="Register.html">Sign In/ Log In</a></li>
+				</ul>
     </nav> 
     <!--------------------------------------------------------------->
     <!-- HEADER IMAGE CONTENT -->
     <div class="header-img">
       <div class="img-content">
-        <h1>Top <span class="primary-color"> education </span> websites</h1>
-        <p>for every age, check out our suggestions</p>
+        <h1>Top <span class="primary-color"> Education </span> Websites</h1>
+        <p>Check out our suggestions, for every age</p>
         <div class="buttons-container">
           <a href="#kids-section"class="btn">Kids</a>
-          <a href="#teenagers-section"class="btn">teenagers</a>
+          <a href="#teenagers-section"class="btn">Teenagers</a>
           <a href="#adults-section"class="btn">Adults</a>
         </div>
       </div>
@@ -53,9 +92,11 @@
         <div class="text-container">
           <div class="main-text">
             <h2>About the Toplist.</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt similique repellat ipsa iste, culpa corporis voluptatibus deleniti tempora magni porro nostrum dolore. Praesentium reprehenderit quia culpa illo totam officia, laboriosam ipsam molestiae neque voluptas. Vel illo quibusdam fugiat voluptatibus voluptates!</p>  
-            <p>Assumenda laudantium at molestiae impedit quaerat totam recusandae, consequatur fuga ratione voluptatibus libero tempora dolores quas expedita vero, aliquam similique perferendis unde magnam dolorum a consequuntur dignissimos. Expedita quaerat animi alias rerum quidem necessitatibus odio omnis iste, corporis dolore totam delectus voluptatem aperiam beatae quis fugiat at facere quibusdam repellat provident facilis 
-            perspiciatis eaque aut natus? Dolores amet veritatis eligendi.</p>
+            <p>People in 2021 spend a huge amount of their time online. Technology evolution has affected nearly every  area of society and
+              education is one of them. We are lucky enough to live is a time where we can find tons of information and knowledge online
+              with the minimun amount of time. On the other side of the coin though, the amount of misinformation and misleading claims 
+              out there is common too.Thats why, we decided to make a toplist to help people find an authentic learning experience from discrete 
+             and secure websites.   </p>
           </div>
         </div>
 
@@ -84,8 +125,13 @@
                 <div class="card-body">
                   <h2> <span class='top-numbers'> 1 </span>      
                   <a class="card-link" href="https://www.funbrain.com" target="_blank">funbrain.com</a></h2>     
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fugiat non sunt laboriosam eum officia fuga ducimus vero repellendus inventore explicabo porro incidunt, eveniet modi reiciendis earum quaerat placeat cupiditate magni adipisci. Excepturi, consequatur itaque soluta quasi iusto, nihil deserunt quibusdam iure earum quisquam eligendi debitis nisi doloribus fugit aut doloremque id vitae eos dolorum sunt, ea obcaecati exercitationem ipsam dolorem? Ex vel doloribus iure? Temporibus dolorem eum rem sed obcaecati placeat, delectus beatae in id qui neque odit suscipit.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fugiat non sunt laboriosam eum officia fuga ducimus vero repellendus inventore explicabo porro incidunt, eveniet modi reiciendis earum quaerat placeat cupiditate magni adipisci. Excepturi, consequatur itaque soluta quasi iusto, nihil deserunt quibusdam iure earum quisquam eligendi debitis nisi doloribus fugit aut doloremque id vitae eos dolorum sunt, ea obcaecati exercitationem ipsam dolorem? Ex vel doloribus iure? Temporibus dolorem eum rem sed obcaecati placeat, delectus beatae in id qui neque odit suscipit.</p>
+                  <p><b>FunBrain</b> is an educational browser game website for children and adults. Its free and contains hundreds of books,comics,games
+                    and videos.Students can browse content by grade level (pre-K to 8),content (games, reading, videos, playground, and math zone)
+                    or search. Some ads of course exist but  the content is absolutely free. Funbrain is an amazing place for teachers
+                    or parents to use as a fun and interactive experience both at home and at school. <br>
+                     <b>Source: </b> <a href="https://en.wikipedia.org/wiki/FunBrain"target="_blank">https://en.wikipedia.org/wiki/FunBrain</a>
+                  </p>
+  
                 </div>
                 <div class="card-footer">
                   <a href="https://www.funbrain.com"target="_blank">Visit Funbrain</a>
@@ -101,9 +147,15 @@
                   <h2><span class='top-numbers'> 2 </span>  
                   <a class="card-link" href="https://www.starfall.com/" target="_blank">starfall.com</a> </h2>
                   
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Temporibus voluptas corporis veniam facere error laboriosam 
-                     magni aliquam ea. Eaque necessitatibus fugit, laborum provident pariatur earum ducimus dolor, perferendis, veritatis assumenda quis illo odio maiores molestias possimus labore. Itaque modi repellendus, enim facilis nisi, debitis non, molestias exercitationem magnam eius quo mollitia id blanditiis voluptates ratione ipsum temporibus magni dolores voluptatem beatae! Reiciendis quod magni omnis, eos dolores, laborum cumque velit numquam quas amet sunt doloribus, nulla expedita. Alias libero asperiores repellendus. Animi odio totam molestias ipsam cum iusto soluta. Mollitia animi voluptatum dolores ab, incidunt qui laudantium nostrum vel dolorum?</p>
+                  <p><b>Starfall</b> is a children website that teaches basic English reading and writing skills.
+                  The main page is split,one for preschoolers and one for kindergarteners. Education
+                 'tools' are basically games and phonics. The website is practically ads free,which is great but the full content
+                  is only accessable to those with starfall paid membership.The fee-based program contains a great additional reading/language arts curriculum. 
+                  That doesn't mean that the free content they provide is not enough. On contrary we think people can use this tool, with or without membership to provide a 'magic',ads free experience 
+                  for their children.<br>
+                  <b>Source: </b>  <a href="https://en.wikipedia.org/wiki/Starfall_(website)"target="_blank">https://en.wikipedia.org/wiki/Starfall</a>
+
+                </p>
                 </div>
                 <div class="card-footer">
                   <a href="https://www.starfall.com/" target="_blank">Visit Starfall</a>
@@ -118,10 +170,17 @@
                 <div class="card-body">
                   <h2> <span class='top-numbers'> 3 </span>  
                   <a class="card-link" href="https://www.coolmath4kids.com/" target="_blank">www.coolmath4kids.com</a></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt laudantium distinctio magnam magni voluptates sit facere ratione consequuntur esse tempore porro ex cumque voluptatem, dolores doloribus deleniti. Sed veniam dolores id repudiandae, voluptatem doloribus, ad numquam ut quasi, doloremque neque molestiae blanditiis fuga unde a? Natus sint excepturi consequatur est ad at tempora temporibus ipsam molestiae ducimus laudantium, doloremque, rerum modi magnam fuga accusamus tempore? Totam quis quia placeat sed eius ipsa magnam esse temporibus nesciunt recusandae, ab voluptate maxime, fugit excepturi architecto ut consectetur quos earum quas unde ex! Eligendi aperiam enim officia nihil maxime error aliquam libero!</p>
+                  <p><b>Coolmath4kids </b> comes as another great choice , to make kids love mathematics. Its a part of a bigger parent brand
+                  named coolmath games and offers math games , online math courses , quizes ,brain teasers and more. The main goal is really simple. To 
+                  make kids love mathematics. The parent website (coolmath games), contain some ads which you can remove by going premium. On the contrary
+                  coolmath4kids is ads free as far as we can tell. Its a great opportunity , to try out this website especially if math content is what you
+                  seek for your kids , or students. The puzzles and games it offers will make them love this site and of course adore Maths . <br>
+                  <b>Source:</b> <a href="https://www.coolmath4kids.com/"target="_blank">https://www.coolmath4kids.com/</a>
+
+                 </p> 
                 </div>
                 <div class="card-footer">
-                  <a href="https://www.coolmath.com/" target="_blank">Visit Coolmath4kids</a>
+                  <a href="https://www.coolmath4kids.com/" target="_blank">Visit Coolmath4kids</a>
                 </div>
               </div>
           </div>
@@ -146,8 +205,14 @@
                 <div class="card-body">
                   <h2> <span class='top-numbers'> 1 </span>  
                     <a class="card-link" href="https://www.khanacademy.org/" target="_blank">www.khanacademy.org</a></h2>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores fugiat non sunt laboriosam eum officia fuga ducimus vero repellendus inventore explicabo porro incidunt, eveniet modi reiciendis earum quaerat placeat cupiditate magni adipisci. Excepturi, consequatur itaque soluta quasi iusto, nihil deserunt quibusdam iure earum quisquam eligendi debitis nisi doloribus fugit aut doloremque id vitae eos dolorum sunt, ea obcaecati exercitationem ipsam dolorem? Ex vel doloribus iure? Temporibus dolorem eum rem sed obcaecati placeat, delectus beatae in id qui neque odit suscipit, ipsum voluptatem, illo dolorum error aliquid! Soluta ducimus, consequuntur aut illum possimus
-                     nesciunt dolor deserunt, deleniti eligendi itaque ratione repellat?</p>
+                  <p><b>khanacademy</b> is an American non-profit educational organization.We could really place this one on every age since
+                  it offers free education for basically everyone.It mainly produces short lessons in form of videos, which are hosted on youtube.
+                  All resources are absolutely free for everyone and without ads . You can browse content by grade level and by subject.
+                  It offers a huge amount of videos, practice exercises and other teaching tools that aim to provide a free personalized learning experience.
+                  We believe khanacademy is amazing and its one of the greatest non-profit place for people to educate themselves regardless of the age. <br>
+                  <b>Source:</b> <a href="https://en.wikipedia.org/wiki/Khan_Academy"target="_blank">https://en.wikipedia.org/wiki/Khan_Academy</a>
+
+                 </p>
                 </div>
                 <div class="card-footer">
                   <a href="https://www.khanacademy.org/" target="_blank">Visit khanacademy</a>
@@ -245,7 +310,76 @@
         </div>
     </section>
      </section>     
-  </main>      
+  </main>   
+  <footer>
+		<div class="container-fluid" style='margin-top:40px; padding:20px;'>
+
+		  <div class="row">
+			<div class="col-12 col-md-4">
+			  <h2>About us</h2>
+			  <div class="content">
+				<p>Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης<br>Τμήμα Πληροφορικής<br>Στόχοι Αειφόρου Ανάπτυξης ΟΗΕ<br>Καλή Υγεία και Ευημερία</p>
+				<div class="social">
+				  <a href="https://facebook.com"><span class="fa fa-facebook-f"></span></a>
+				  <a href="https://twitter.com"><span class="fa fa-twitter"></span></a>
+				  <a href="https://instagram.com"><span class="fa fa-instagram"></span></a>
+				  <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-12 col-md-4">
+			  <h2>Address</h2>
+			  <div class="content">
+				<div class="place">
+				  <a href="https://www.google.gr/maps/place/%CE%91%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%84%CE%AD%CE%BB%CE%B5%CE%B9%CE%BF+%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%CF%82/@40.6308283,22.9570337,17z/data=!3m1!4b1!4m5!3m4!1s0x14a838ff432792c9:0x15eefe1dc3e6c8e9!8m2!3d40.6308283!4d22.9592224?hl=el"><span class="fa fa-map"></span></a>
+				  <span class="text">Thessaloniki, Greece</span>
+				</div>
+				<div class="phone">
+				  <a href="https://www.google.com/search?q=auth+phone&sxsrf=ALeKk00buQcm7lPf6nj1TQuEa9ofHu6Obw%3A1617693532199&ei=XAtsYIbPC4j4sAeChY7ICw&oq=auth+phone&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIABBHELADOgcIABCwAxBDOgIIAFCiggFY-IcBYO2KAWgCcAJ4AIABpgGIAeQGkgEDMC42mAEAoAEBqgEHZ3dzLXdpesgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwiG7d2CiunvAhUIPOwKHYKCA7kQ4dUDCA0&uact=5"><span class="fa fa-phone"></span></a>
+				  <span class="text">+30 231 099 6000</span>
+				</div>
+				<div class="email">
+				  <span class="fa fa-envelope"></span>
+				  <span class="text">email@csd.auth.gr</span>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-12 col-md-4">
+			  <h2>Contact us</h2>
+			  <div class="content">
+				<form action="#">
+				  <div class="email">
+					<div class="text">Email *</div>
+					<input type="email" required>
+					<textarea rows="1" cols="25" required></textarea>
+				  </div>
+				  <div class="msg">
+					<div class="text">Message *</div>
+					<textarea rows="2" cols="25" required></textarea>
+				  </div>
+				  <div>
+					<button class="btn btn-primary" type="submit">Send</button>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm text-center">
+			  <span class="credit">Created By Aristotle University of Thessaloniki</a> | </span>
+			  <i class="fa fa-copyright" aria-hidden="true"></i><span> 2021 All rights reserved.</span>
+		  </div>
+		  </div>
+	</div>
+</footer>
+		<!--------END OF FOOTER---------->
+		
+		
+		<!---------START OF <TOP> BUTTON--------->
+		<a href="#"><i class="gotopbtn" href="#"><i class="fa fa-arrow-circle-up"></i></i></a>
+		<!----------END OF TOP BUTTON---------->   
 </body>
 </html>
 
