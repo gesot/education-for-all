@@ -377,7 +377,7 @@ input {
 nav .fa {
   display: none;
 }
-/*-----------------------MAIN CONTENT------------------------*/
+/*-------------------------------------------------------*/
 .intro {
   position: relative;
   margin: 0 auto;
@@ -476,8 +476,8 @@ hr.top {
 }
 .take-action-now img {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
   margin: 0 auto;
 }
