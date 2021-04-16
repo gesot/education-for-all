@@ -1,72 +1,94 @@
-.contact-section{
-	margin-top:100px;
-	/*background: url(images/dreamstime_xxl_124673889.jpg) no-repeat center;*/
-	background-size: cover;
-	padding: 40px 0;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 97vh;
+  margin: auto;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/contact1.jpg);
+  background-position: center;
+  background-size: cover;
+
+  padding: 40px 0;
 }
 
-.contact-section h1{
-	text-align: center;
-	color: black;
-	font-size: 80px;
+.contact-wrap {
+  background-image: linear-gradient(#16495f, #1c6b8d);
+  background-color: transparent;
+  border: 1px solid rgb(146 146 146 / 36%);
+  padding: 35px;
+  padding-top: 100px;
 }
 
-.border{
-	width: 100px;
-	height: 10px;
-	background: #fff;
-	margin: 240px auto;
+.contact-section h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  margin: 30px;
+  margin-bottom: 80px;
 }
 
-.contact-form{
-	max-width: 600px;
-	margin: auto;
-	padding: 0 10px;
-	overflow: hidden;
+.border {
+  width: 100px;
+  height: 10px;
+  background: #fff;
+  margin: 240px auto;
 }
 
-.contact-form-text{
-	display:block;
-	width: 100%;
-	box-sizing: border-box;
-	margin: 16px 0;
-	border: 0;
-	background: #111;
-	padding: 20px 40px;
-	outline: none;
-	color: #ddd;
-	transition: 0.5s;
+.contact-form {
+  max-width: 600px;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-.contact-form-text:hover{
-	box-shadow: 0 0 10px 4px cyan;
+.contact-form-text {
+  display: block;
+  width: 20vw;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #0e2c3d;
+  border: 1px solid rgb(146, 146, 146);
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
 }
 
-textarea.contact-form-text{
-	resize: none;
-	height: 200px;
+.contact-form-text:focus {
+  border: 1px solid rgb(255, 255, 255);
 }
 
-.contact-form-btn{
-	float: right;
-	border: 0;
-	background: #fff;
-	color: #fff;
-	padding: 12px 50px;
-	border-radius: 20px;
-	cursor: pointer;
-	transition: 0.5s;
+.contact-form-text::placeholder {
+  color: rgb(180, 180, 180);
+  font-size: 16px;
 }
 
-.contact-form-btn:hover{
-	background: #2980b9;
+.contact-form-text:hover {
 }
 
+textarea.contact-form-text {
+  resize: none;
+  height: 200px;
+}
 
+.contact-form .btn {
+  width: 100%;
+  background: transparent;
+  background: linear-gradient(to right, #6ddec7, #46c0c0);
+  border: 1px solid rgb(88, 88, 88);
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
+.contact-form-btn:hover {
+  background: #2980b9;
+}
