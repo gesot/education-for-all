@@ -365,10 +365,9 @@ input {
 
 .img-slider .slide .info {
   position: absolute;
-  top: 0;
-  padding: 30px 30px;
-  width: 100%;
+  top: 30%;
   text-align: center;
+  width: 100%;
 }
 
 .img-slider .slide .info h2 {
@@ -377,7 +376,7 @@ input {
   font-size: 100px;
   font-weight: 500;
   text-align: center;
-  padding-top: 125px;
+
   margin-bottom: 0;
 }
 
@@ -512,7 +511,6 @@ input {
   }
 
   .img-slider .slide .info p {
-    width: 80%;
     font-size: 13px;
   }
 
@@ -579,6 +577,7 @@ input {
 
   .img-slider .slide .info p {
     width: 90%;
+    margin: auto;
     font-size: 11px;
   }
 
@@ -846,4 +845,18 @@ footer .row > div {
   font-weight: bold;
   font-size: 2vw;
   color: black;
+}
+
+@media screen and (max-width: 1202px) {
+  .img-slider .slide img {
+    height: 100% !important;
+  }
+
+  .img-slider .slide .info {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    transform: unset !important;
+    left: unset;
+  }
 }
