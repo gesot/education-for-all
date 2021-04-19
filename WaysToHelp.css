@@ -379,7 +379,6 @@ nav .fa {
 }
 /*-----------------------MAIN CONTENT------------------------*/
 .intro {
-  position: relative;
   margin: 0 auto;
   text-align: center;
 }
@@ -391,14 +390,15 @@ hr.top {
   border-width: 1px;
 }
 #main-content {
-  display: flex;
   vertical-align: center;
   margin: 0 auto;
 }
 
 .main-photo {
-  width: 354px;
+  width: 500px;
+  height: 1000px;
   background-color: white;
+  margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -407,7 +407,7 @@ hr.top {
   display: flex;
   vertical-align: middle;
   margin: 0 auto;
-  width: 354px;
+  width: 500px;
   height: auto;
 }
 
@@ -420,11 +420,9 @@ hr.top {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.responsive {
+.boxbox {
   padding-top: 100px;
-  padding-left: 100px;
-  float: left;
-  width: 24%;
+  padding-bottom: 100px;
 }
 
 .clearfix:after {
@@ -435,10 +433,6 @@ hr.top {
 .image {
   width: 250px;
   height: 250px;
-}
-.container {
-  position: relative;
-  width: 50%;
 }
 
 .middle {
