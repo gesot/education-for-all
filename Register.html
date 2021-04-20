@@ -5,14 +5,53 @@
 		<title>Log In/Register</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="register.css">
+		<link rel="stylesheet" href="index.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	</head>
 	 <body>
+		<section class="header">
+			<nav>
+				<div class="logo">EducationForAll</div>
+				<label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+				</label>
+				
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li>
+						<label for="btn-1" class="show">Information +</label>
+						<a href="information.html">Information<span class="fa fa-caret-down"></span></a>						
+						<ul>
+							<li><a href="#">Category1</a></li><!--ΘΑ ΣΤΕΛΝΟΥΝ ΣΕ ΛΙΝΚ-->
+							<li><a href="#">Category2</a></li>
+							<li><a href="#">Category3</a></li>
+						</ul>
+					</li>
+					<li>						
+						<a href="WaysToHelp.html">Ways to Help<span class="fa fa-caret-down"></span></a>						
+						<ul>
+							<li><a href="#">Category1</a></li>
+							<li><a href="#">Category2</a></li>							
+						</ul>	
+					</li>
+					<li><a href="learn-now.html">Learn Now</a></li>
+					<li><a href="#">Docs/Films/Series</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+					<li><a href="#">Sign In/ Log In</a></li>
+				</ul>
+			</nav>
+		</section>
+
+
+
+
+		
 		<!------------------------------------------------------------------------>
 		
 		<div class="container">
@@ -23,8 +62,8 @@
 						<form>
 							<input type="email" class="input-box" placeholder="Email" required>
 							<input type="password" class="input-box" placeholder="Password" required>
+							<input type="checkbox" class="rem-me"><span>Remember Me</span>
 							<button type="submit" class="submit-btn">Log in</button>
-							<input type="checkbox"><span>Remember Me</span>
 						</form>
 						<button type="button" class="btn" onclick="openRegister()">Create a new account</button>
 						<a href="">Forgot Password</a><br><br>
@@ -36,8 +75,7 @@
 							<input type="text" class="input-box" placeholder="Username" required>
 							<input type="email" class="input-box" placeholder="Email" required>
 							<input type="password" class="input-box" placeholder="Password" required>
-							<button type="submit" class="submit-btn">Create your account</button>
-							<input type="checkbox"><span>Remember Me</span>
+							<button type="submit" class="submit-btn">Create your account</button>					
 						</form>
 						<button type="button" class="btn" onclick="openLogin()">I have an account</button>
 						<a href="">Forgot Password</a><br><br>

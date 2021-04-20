@@ -89,6 +89,10 @@ textarea.contact-form-text {
   cursor: pointer;
 }
 
-.contact-form-btn:hover {
-  background: #2980b9;
+.contact-form .btn:hover {
+  color: #fff;
+  background: transparent;
+  background: #4fb6b6;
+  transition: unset;
+  border-color: rgb(235, 235, 235);
 }
