@@ -44,9 +44,13 @@ a {
   height: 97vh;
   background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)),
     url("../images/d3.jpg") no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.img-content {
+  position: absolute;
+  top: 39%;
+  text-align: center;
+  width: 100%;
 }
 
 /* header text */
