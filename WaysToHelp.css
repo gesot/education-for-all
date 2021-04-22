@@ -75,9 +75,6 @@ p {
   transition: 0.5s;
 }
 
-nav .fa {
-  display: none;
-}
 /*-----------------------MAIN CONTENT------------------------*/
 .intro {
   margin: 0 auto;
