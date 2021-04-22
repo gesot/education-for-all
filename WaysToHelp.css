@@ -22,305 +22,7 @@ p {
 }
 
 /*----------START of MENU-----------*/
-nav {
-  background: #204959;
-}
-nav:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-nav .logo {
-  float: left;
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 70px;
-  padding-left: 60px;
-  margin-top: 10px;
-}
-nav ul {
-  float: right;
-  margin-right: 40px;
-  list-style: none;
-  position: relative;
-  z-index: 100;
-  margin-top: 10px;
-}
-nav ul li {
-  display: inline-block;
-  background: #204959;
-  margin: 0 5px;
-}
-nav ul li a {
-  color: white;
-  line-height: 70px;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 8px 15px;
-}
-nav ul li a:hover {
-  color: cyan;
-  border-radius: 20px;
-  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
-}
-nav ul ul li a:hover {
-  box-shadow: none;
-}
-nav ul ul {
-  position: absolute;
-  top: 90px;
-  border-top: 2px solid cyan;
-  opacity: 0;
-  visibility: hidden;
-  transition: top 0.5s;
-}
-nav ul ul ul {
-  border-top: none;
-}
-nav ul li:hover > ul {
-  top: 50px;
-  opacity: 1;
-  visibility: visible;
-}
-nav ul ul li {
-  position: relative;
-  margin: 0px;
-  width: 150px;
-  float: none;
-  display: list-item;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-nav ul ul li a {
-  line-height: 50px;
-}
-nav ul ul ul li {
-  position: relative;
-  top: -60px;
-  left: 150px;
-}
-.show,
-.icon,
-input {
-  display: none;
-}
-.fa-plus {
-  font-size: 15px;
-  margin-left: 40px;
-}
 
-@media all and (max-width: 968px) {
-  nav ul {
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo {
-    padding-left: 80px;
-    width: 100%;
-  }
-  .show + a,
-  ul {
-    display: none;
-  }
-  nav ul li,
-  nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  nav ul li a:hover {
-    box-shadow: none;
-  }
-  .show {
-    display: block;
-    color: white;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover {
-    color: cyan;
-  }
-  .icon {
-    display: block;
-    color: white;
-    position: absolute;
-    top: 0px;
-    right: 80px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  nav ul ul {
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  nav ul ul a {
-    padding-left: 40px;
-  }
-  nav ul ul ul a {
-    padding-left: 80px;
-  }
-  nav ul ul ul li {
-    position: static;
-  }
-  [id^="btn"]:checked + ul {
-    display: block;
-  }
-  nav ul ul li {
-    border-bottom: 0px;
-  }
-  span.cancel:before {
-    content: "\f00d";
-  }
-}
-
-@media all and (max-width: 419px) {
-  nav ul {
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo {
-    padding-left: 10px;
-    width: 100%;
-  }
-  .show + a,
-  ul {
-    display: none;
-  }
-  nav ul li,
-  nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  nav ul li a:hover {
-    box-shadow: none;
-  }
-  .show {
-    display: block;
-    color: white;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover {
-    color: cyan;
-  }
-  .icon {
-    display: block;
-    color: white;
-    position: absolute;
-    top: 0px;
-    right: 40px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  nav ul ul {
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  nav ul ul a {
-    padding-left: 40px;
-  }
-  nav ul ul ul a {
-    padding-left: 80px;
-  }
-  nav ul ul ul li {
-    position: static;
-  }
-  [id^="btn"]:checked + ul {
-    display: block;
-  }
-  nav ul ul li {
-    border-bottom: 0px;
-  }
-  span.cancel:before {
-    content: "\f00d";
-  }
-}
-@media all and (max-width: 367px) {
-  nav ul {
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo {
-    padding-left: 30px;
-    width: 100%;
-  }
-  .show + a,
-  ul {
-    display: none;
-  }
-  nav ul li,
-  nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  nav ul li a:hover {
-    box-shadow: none;
-  }
-  .show {
-    display: block;
-    color: white;
-    font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover {
-    color: cyan;
-  }
-  .icon {
-    display: block;
-    color: white;
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  nav ul ul {
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  nav ul ul a {
-    padding-left: 40px;
-  }
-  nav ul ul ul a {
-    padding-left: 80px;
-  }
-  nav ul ul ul li {
-    position: static;
-  }
-  [id^="btn"]:checked + ul {
-    display: block;
-  }
-  nav ul ul li {
-    border-bottom: 0px;
-  }
-  span.cancel:before {
-    content: "\f00d";
-  }
-}
-/*----------END of MENU-----------*/
 /*---------START of IMAGE--------*/
 
 .header {
@@ -408,13 +110,26 @@ hr.bottom {
   margin-bottom: 2em;
   border-width: 1px;
 }*/
+.ways-to-help {
+  background-color: #2b5f74;
+  padding-bottom: 1.9em;
+  padding-top: 1.9em;
+}
 #main-content {
   vertical-align: center;
   margin: 0 auto;
+  padding-bottom: 1.9em;
 }
 
+.desc p {
+  font-size: 1.2em;
+}
+.desc h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
 .main-photo {
-  width: 32em;
+  width: 100%;
   height: 1000px;
   background-color: white;
   margin: 0 auto;
@@ -426,7 +141,7 @@ hr.bottom {
   display: flex;
   vertical-align: middle;
   margin: 0 auto;
-  width: 32em;
+  width: 100%;
   height: auto;
 }
 
@@ -440,7 +155,8 @@ hr.bottom {
   padding-top: 10px;
 }
 .boxbox {
-  padding-top: 100px;
+  padding: 1.9em;
+  margin-top: 1.9em;
 }
 .responsive {
   padding-top: 100px;
@@ -456,8 +172,8 @@ hr.bottom {
 }
 
 .take-action-now h2 {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 1.9em;
+  margin-bottom: 3em;
   text-align: center;
 }
 .take-action-now img {
@@ -470,8 +186,13 @@ hr.bottom {
 .take-action-now p {
   color: rgba(4, 9, 30, 0.7);
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+/*-----------------DONATE-VOLUNTEER CSS-------------------*/
+#donate-volunteer {
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 /*--------------------RECCOMENDATIONS CSS----------------*/
 
@@ -506,11 +227,23 @@ hr.bottom {
   opacity: 1;
 }
 
-.text {
+.button-text {
   font-size: 16px;
-  padding: 16px 32px;
+  padding: 10px 10px;
+  background-color: rgba(52, 82, 189, 0.8);
 }
-
+.button-text:hover {
+  font-size: 16px;
+  padding: 10px 10px;
+  background-color: rgba(52, 82, 189, 1);
+  border-color: black;
+}
+.button-text a {
+  color: white;
+}
+.button-text a:hover {
+  color: white;
+}
 .reccomendations h2 {
   margin-bottom: 30px;
   margin-left: 15px;
