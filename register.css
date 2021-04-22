@@ -132,7 +132,7 @@ button:hover {
 	right: -1px;
 	top: -1px;
 } */
-span {
+.card-front span {
   font-size: 13px;
   margin-left: 5px;
 }
