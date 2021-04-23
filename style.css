@@ -23,6 +23,11 @@ p {
 }
 
 /*----------START of MENU-----------*/
+
+.fa {
+  margin-left: 5px;
+}
+
 nav {
   background: #204959;
 }
@@ -73,7 +78,7 @@ nav ul ul li a:hover {
 nav ul ul {
   position: absolute;
   top: 90px;
-  border-top: 2px solid cyan;
+  border-top: 1px solid cyan;
   opacity: 0;
   visibility: hidden;
   transition: top 0.5s;

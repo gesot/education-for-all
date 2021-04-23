@@ -1,6 +1,10 @@
 /* -------------------------------------------------------- */
 /*-------------- NAV BAR STYLING ----------------------------*/
 
+.fa {
+  margin-left: 5px;
+}
+
 nav {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -54,7 +58,7 @@ nav ul ul li a:hover {
 nav ul ul {
   position: absolute;
   top: 90px;
-  border-top: 2px solid cyan;
+  border-top: 1px solid cyan;
   opacity: 0;
   visibility: hidden;
   transition: top 0.5s;
