@@ -37,20 +37,46 @@
 }
 
 body {
-	background: rgb(49, 120, 148);
-	background: radial-gradient(
-		circle,
-		rgba(49, 120, 148, 1) 13%,
-		rgba(34, 97, 113, 1) 56%,
-		rgba(20, 47, 57, 1) 100%
-	);
+	background: rgb(146, 156, 182);
 }
 
 p {
-	color: #7ba6a1;
+	color: #464661;
 }
 
 h3,
 h2 {
-	color: #7ba6a1;
+	color: #23312e;
+}
+
+.wrapper {
+	padding-bottom: 30px;
+}
+
+.divider {
+	position: relative;
+	margin-top: 50px;
+	height: 1px;
+}
+
+.div-transparent:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		transparent,
+		rgb(48, 49, 51),
+		transparent
+	);
+}
+
+.dyk {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0.4em;
 }
