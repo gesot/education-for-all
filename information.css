@@ -33,11 +33,11 @@
 
 .imgtitle {
 	color: white;
-	font-size: 70px;
+	font-size: 100px;
 }
 
 body {
-	background: rgb(146, 156, 182);
+	background: #bad9d0;
 }
 
 p {
@@ -83,4 +83,32 @@ h2 {
 
 .incl {
 	margin-left: 2em;
+}
+
+#qm {
+	color: red;
+}
+
+#titlecrl {
+	color: coral;
+}
+
+.h {
+	height: 85%;
+}
+
+.wht {
+	color: white;
+}
+
+.infobtn {
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	transition-duration: 0.5s;
+	border-radius: 0%;
+}
+
+.infobtn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
 }
