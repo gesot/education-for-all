@@ -15,6 +15,7 @@
   color: #fff;
   margin-bottom: 0px;
   padding-top: 50px;
+  background-image: url(images/infoimg.jpg);
 }
 .card {
   margin-bottom: 10vh;
@@ -118,6 +119,19 @@ button:hover {
   background: #4fb6b6;
   border-color: rgb(235, 235, 235);
 }
+
+footer button {
+  width: 15%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #042e82;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 
 /* .submit-btn::after{
 	content: '\27a4';

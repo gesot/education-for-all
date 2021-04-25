@@ -384,6 +384,7 @@ footer p {
 .content .fa {
   font-size: 1.4375rem;
   background: #042e82;
+  color: white;
   height: 45px;
   width: 45px;
   line-height: 45px;
