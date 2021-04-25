@@ -41,7 +41,7 @@ a {
 /* ------------------HEADER------------------------------- */
 /* inserting background header img */
 .header-img {
-  height: 97vh;
+  min-height: 97vh;
   background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)),
     url("../images/d3.jpg") no-repeat center/cover;
 }
@@ -237,6 +237,10 @@ a {
   color: #204959;
 }
 
+.card:last-child {
+  margin-bottom: 0 !important;
+}
+
 /* MEDIA Q */
 @media screen and (max-width: 587px) {
   body {
@@ -270,6 +274,18 @@ a {
   }
   .card .card-link {
     font-size: 25px !important;
+  }
+}
+
+@media screen and (max-height: 980px) {
+  .img-content {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+  }
+  .img-content p {
+    padding: 0 !important;
   }
 }
 
