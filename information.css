@@ -33,7 +33,7 @@
 
 .imgtitle {
 	color: white;
-	font-size: 100px;
+	font-size: 6.25em;
 }
 
 body {
@@ -93,10 +93,6 @@ h2 {
 	color: coral;
 }
 
-.h {
-	height: 85%;
-}
-
 .wht {
 	color: white;
 }
@@ -111,4 +107,15 @@ h2 {
 .infobtn:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 	color: white;
+}
+
+.ohgod {
+	width: 100%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
