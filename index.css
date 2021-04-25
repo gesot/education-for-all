@@ -314,8 +314,8 @@ input {
 /*-------------- FOOTER STYLING ----------------------------*/
 
 footer {
+  margin-top: 0 !important;
   position: relative;
-  bottom: -100px;
   width: 100%;
   background: #000714;
 }
