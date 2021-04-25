@@ -121,7 +121,15 @@ button:hover {
 }
 
 footer button {
-	width: 20%;
+  width: 15%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #042e82;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 
@@ -169,4 +177,3 @@ footer button {
 .card a:hover {
   color: rgb(206, 206, 206);
 }
-
