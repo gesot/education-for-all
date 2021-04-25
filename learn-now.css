@@ -283,6 +283,10 @@ a {
   .cards-area-container {
     width: 60%;
   }
+   .header-img{
+      width: 100%;
+      height: 700px
+  }
 }
 
 @media screen and (max-width: 901px) {
