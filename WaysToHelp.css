@@ -24,55 +24,61 @@ p {
 /*----------START of MENU-----------*/
 
 /*---------START of IMAGE--------*/
-
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/advance1.png);
-  background-color: #f2f0d0;
-  background-position: center;
-  background-size: cover;
-  position: relative;
+.primary-color {
+  color: coral;
+}
+.header-img {
+  height: 97vh;
+  background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)),
+    url("../images/d3.jpg") no-repeat center/cover;
 }
 
-.text-box {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.img-content {
+  position: relative;
+  top: 39%;
   text-align: center;
+  width: 100%;
 }
 
-.text-box h1 {
-  font-size: 62px;
+/* header text */
+.header-img .img-content h1 {
+  text-align: center;
   color: #fff;
+  font-size: 100px;
+  font-family: "poppins", sans-serif;
+  line-height: 1.35;
 }
 
-.text-box p {
-  font-family: "Roboto", sans-serif;
-  margin: 10px 0 40px;
-  font-size: 14px;
-  color: rgb(248, 248, 248);
-}
+/*------------------- END OF HEADER-------------- */
 
-.hero-btn {
+/* ------------------------------------------- */
+/*------------------BUTTONS------------------- */
+
+.buttons-container {
+  text-align: center;
+  margin-top: 15px;
+}
+.header-img .img-content a {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  /*border: 1px solid rgb(224, 28, 28);*/
-  padding: 12px 34px;
-  font-size: 13px;
-  background: rgb(62, 69, 170);
-  position: relative;
+  padding: 10px 34px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  background: #fff;
+  color: #464646;
+  border: #fff solid 1px;
   cursor: pointer;
+  position: relative;
+  line-height: 1.2;
 }
 
-.hero-btn:hover {
-  border: 2px solid rgb(62, 69, 170);
-  background: rgb(255, 254, 255);
-  transition: 0.5s;
+.header-img .img-content a:hover {
+  background: #5a5a5a;
+  color: #fff;
+}
+
+.header-img .img-content a:focus {
+  outline: none !important;
 }
 
 /*-----------------------MAIN CONTENT------------------------*/
