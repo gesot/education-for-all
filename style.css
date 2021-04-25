@@ -117,7 +117,7 @@ input {
   margin-left: 40px;
 }
 
-@media all and (max-width: 968px) {
+@media all and (max-width: 1280px) {
   nav ul {
     margin-right: 0px;
     float: left;
