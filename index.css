@@ -98,7 +98,7 @@ input {
 }
 /* -------------------- */
 /* NAV MEDIA */
-@media all and (max-width: 968px) {
+@media all and (max-width: 1270px) {
   nav ul {
     margin-right: 0px;
     float: left;
