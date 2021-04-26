@@ -279,7 +279,14 @@ p {
     margin: 0 auto;
   }
 }
-
+.sources {
+  font-size: 13px;
+  text-align: left;
+  font-style: italic;
+}
+a {
+  color: red;
+}
 /*--TAKE ACTION CSS--*/
 .did-you-know {
   margin-bottom: 0;
@@ -308,7 +315,7 @@ p {
   margin-top: 6em;
   margin-bottom: 6em;
 }
-/*RECCOMENDATIONS CSS*/
+/*RECOMEMNDATIONS CSS*/
 
 .clearfix:after {
   content: "";
@@ -358,11 +365,11 @@ p {
 .button-text a:hover {
   color: white;
 }
-.reccomendations h2 {
+.recommendations h2 {
   margin-bottom: 30px;
   margin-left: 15px;
 }
-.reccomendations .row {
+.recommendations .row {
   margin: 0 auto;
 }
 .carousel-control-prev,
