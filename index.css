@@ -169,13 +169,13 @@ input {
   }
 }
 
-@media all and (max-width: 419px) {
+@media all and (max-width: 480px) {
   nav ul {
     margin-right: 0px;
     float: left;
   }
   nav .logo {
-    padding-left: 10px;
+    padding-left: 8px;
     width: 100%;
   }
   .show + a,
