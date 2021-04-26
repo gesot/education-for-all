@@ -109,13 +109,90 @@ h2 {
 	color: white;
 }
 
-.ohgod {
+.infostart {
 	width: 100%;
 	height: 50%;
 	margin: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+	position: relative;
+	top: 15%;
+}
+
+@media only screen and (max-width: 93.75em) {
+	.imgtitle {
+		font-size: 5.5em;
+	}
+	.wht {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (max-width: 83.125em) {
+	.imgtitle {
+		font-size: 5em;
+	}
+	.wht {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 75em) {
+	.imgtitle {
+		font-size: 4.5em;
+	}
+	.wht {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 65.625em) {
+	.imgtitle {
+		font-size: 4em;
+	}
+	.wht {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 59.6875em) {
+	.imgtitle {
+		font-size: 3.5em;
+	}
+	.wht {
+		font-size: 0.9em;
+	}
+}
+@media only screen and (max-width: 50em) {
+	.imgtitle {
+		font-size: 3.2em;
+	}
+	.wht {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 34.375em) {
+	.imgtitle {
+		font-size: 2.3em;
+	}
+	.wht {
+		font-size: 0.7em;
+	}
+}
+
+@media only screen and (max-width: 23.75em) {
+	.imgtitle {
+		font-size: 1.95em;
+	}
+	.wht {
+		font-size: 0.6em;
+	}
+}
+
+@media only screen and (max-width: 18.75em) {
+	.imgtitle {
+		font-size: 1.5em;
+	}
+	.wht {
+		font-size: 0.5em;
+	}
 }
