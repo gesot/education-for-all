@@ -124,9 +124,9 @@ a {
 }
 
 .text-container .main-text p {
-  text-align: left;
+  text-align: center;
   color: #606362;
-  width: 60%;
+  width: 40%;
   margin: auto;
   line-height: 1.875em;
   font-size: 1.3em;
@@ -317,8 +317,6 @@ a {
 @media screen and (max-width: 1201px) {
   .cards-area-container {
     width: 60%;
-  }
-  .header-img {
   }
 }
 
