@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   font-family: sans-serif;
   background: rgb(128, 128, 128);
   color: #fff;
@@ -23,7 +23,7 @@
   border-radius: 2px;
 
   width: 400px;
-  height: 640px;
+  height: 600px;
 
   prespective: 1000px;
 }
@@ -176,4 +176,33 @@ footer button {
 
 .card a:hover {
   color: rgb(206, 206, 206);
+}
+
+@media all and (max-width: 420px) {
+	.container{
+		height: 700px;
+	}
+	.card{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media all and (max-width: 820px) {
+	.container{
+		height: 700px;
+	}
+	.card{
+		width: 80%;
+		height: 100%;
+	}
+}
+@media all and (max-width: 1200px) {
+	.container{
+		height: 700px;
+	}
+	.card{
+		width: 60%;
+		height: 90%;
+	}
 }
