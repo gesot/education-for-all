@@ -27,46 +27,62 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!--INTRO-->
-    <section class="header">
-      <nav id="navibar">
-        <div class="logo">EducationForAll</div>
-        <label for="btn" class="icon">
-          <span class="fa fa-bars"></span>
-        </label>
-        <input type="checkbox" id="btn" />
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li>
-            <label for="btn-1" class="show">Information</label>
-            <a href="information.html">Information</a>
-            <input type="checkbox" id="btn-1" />
-          </li>
-          <li>
-            <a href="WaysToHelp.html">Ways to Help</a>
-            <input type="checkbox" id="btn-2" />
-          </li>
-          <li>
-            <a href="learn-now.html">Learn Now<span class="fa fa-caret-down"></span></a>
-            <ul>
-              <li><a href="learn-now.html#kids-section">Kids</a></li>
-              <li><a href="learn-now.html#teenagers-section">Teenagers</a></li>
-              <li><a href="learn-now.html#adults-section">Adults</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Docs/Films/Series</a></li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-          <li><a href="Register.html">Sign Up/ Log In</a></li>
-        </ul>
-      </nav>
-      <div class="header-img">
-        <div class="img-content">
-          <h1>
-            Advance <span class="primary-color"> Quality </span> Education
+    <!--START OF INTRO-->
+    <section class="foo">
+      <section class="header">
+        <nav>
+          <div class="logo">EducationForAll</div>
+          <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+          </label>
+          <input type="checkbox" id="btn" />
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="WaysToHelp.html">Ways to Help</a></li>
+            <li>
+              <a href="learn-now.html"
+                >Learn Now<span class="fa fa-caret-down"></span
+              ></a>
+              <ul>
+                <li><a href="learn-now.html#kids-section">Kids</a></li>
+                <li>
+                  <a href="learn-now.html#teenagers-section">Teenagers</a>
+                </li>
+                <li><a href="learn-now.html#adults-section">Adults</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Docs/Films/Series</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Register.html">Sign Up/ Log In</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- START OF INFORMATION PAGE CODE -->
+      <div
+        class="d-flex flex-column justify-content-center align-items-center text-center infostart text-wrap"
+      >
+        <div class="row justify-content-center">
+          <h1 class="imgtitle">
+            Advance Quality<span id="titlecrl"> Education</span>
           </h1>
-          <div class="buttons-container">
-            <a href="#teenagers-section" class="btn">Learn How!</a>
-          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <h2 class="wht">
+            Help advance the right to quality, inclusive education.
+          </h2>
+        </div>
+        <div
+          class="row align-items-center justify-content-center"
+          style="margin-top: 1em"
+        >
+          <a
+            href="#ways-to-help"
+            class="btn btn-outline-light infobtn btn-lg"
+            role="button"
+            data-bs-toggle="button"
+            >Learn How</a
+          >
         </div>
       </div>
     </section>
@@ -82,13 +98,14 @@
         <br />on an ordinary citizen, local communities and beyond!
       </p>
     </div>
-    <!--INTRO-->
+    <!--END OF INTRO-->
+    <!--START OF WAYS TO HELP-->
     <section class="ways-to-help">
-      <div class="container-xl" id="main-content">
+      <div class="container-md" id="main-content">
         <div class="row" id="row1">
           <div class="col-lg-6">
             <div class="boxbox" id="left1">
-              <div class="main-photo">
+              <div class="boxbox-body">
                 <a target="_blank" href="img_5terre.jpg">
                   <img
                     src="images/teenager3.jpg"
@@ -120,7 +137,7 @@
           </div>
           <div class="col-lg-6">
             <div class="boxbox" id="right1">
-              <div class="main-photo">
+              <div class="boxbox-body">
                 <a target="_blank" href="img_5terre.jpg">
                   <img
                     src="images/adult1.jpg"
@@ -149,7 +166,7 @@
         <div class="row" id="row2">
           <div class="col-lg-6">
             <div class="boxbox" id="left2">
-              <div class="main-photo">
+              <div class="boxbox-body">
                 <a target="_blank" href="img_5terre.jpg">
                   <img
                     src="images/adult1.jpg"
@@ -181,7 +198,7 @@
           </div>
           <div class="col-lg-6">
             <div class="boxbox" id="right2">
-              <div class="main-photo">
+              <div class="boxbox-body">
                 <a target="_blank" href="img_5terre.jpg">
                   <img
                     src="images/adult1.jpg"
@@ -211,27 +228,29 @@
         </div>
       </div>
     </section>
-    <!--TAKE ACTION-->
-    <section class="take-action-now">
+    <!--END OF WAYS TO HELP-->
+
+    <!--START OF TAKE ACTION-->
+    <section class="did-you-know">
       <h2>DID YOU KNOW THAT...</h2>
       <div class="container-fluid" id="facts">
         <div class="row">
           <div class="col-lg-4">
-            <img src="images/icons/grad hat.png" alt="" />
+            <img src="images/icons/grad hat.png" alt="Blue graduation hat" />
             <p>
               Only 64% of primary teachers in sub-Saharan Africa <br />
               have the minimum required training.
             </p>
           </div>
           <div class="col-lg-4">
-            <img src="images/icons/wifi.png" alt="" />
+            <img src="images/icons/wifi.png" alt="Blue WiFi icon" />
             <p>
               In developing coutnries, less than 10% of schools <br />
               are connected to the Internet.
             </p>
           </div>
           <div class="col-lg-4">
-            <img src="images/icons/pc.png" alt="" />
+            <img src="images/icons/pc.png" alt="Blue computer screen icon" />
             <p>
               50% of students worlwide and 89% in sub-Saharan Africa <br />
               don’t have a computer at home.
@@ -299,10 +318,11 @@
         </div>
       </div>
     </div>
+    <!--END OF TAKE ACTION-->
 
-    <!--RECCOMENDATIONS-->
+    <!--START OF RECCOMENDATIONS-->
     <hr />
-    <h2>Recommendations</h2>
+    <h2 style="margin-left: 2em">Recommendations</h2>
     <br /><br />
     <div
       id="reccomendations-carousel"
@@ -508,8 +528,8 @@
         >
       </div>
     </div>
+    <!--END OF RECCOMENDATIONS-->
 
-    <!-- MY PART END-->
     <!--END of CONTEINER-->
 
     <!--START OF FOOTER-->
