@@ -178,13 +178,16 @@ footer button {
   color: rgb(206, 206, 206);
 }
 
-@media all and (max-width: 420px) {
+@media all and (max-width: 487px) {
 	.container{
 		height: 700px;
 	}
 	.card{
 		width: 100%;
 		height: 100%;
+	}
+	.btn{
+		height:75px;
 	}
 }
 
