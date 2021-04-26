@@ -114,7 +114,7 @@ h2 {
 	height: 50%;
 	margin: auto;
 	position: relative;
-	top: 15%;
+	top: 17%;
 }
 
 @media only screen and (max-width: 93.75em) {
@@ -163,7 +163,7 @@ h2 {
 }
 @media only screen and (max-width: 50em) {
 	.imgtitle {
-		font-size: 3.2em;
+		font-size: 3em;
 	}
 	.wht {
 		font-size: 0.9em;
@@ -178,19 +178,27 @@ h2 {
 		font-size: 0.7em;
 	}
 }
-
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 27em) {
 	.imgtitle {
-		font-size: 1.95em;
+		font-size: 2em;
 	}
 	.wht {
 		font-size: 0.6em;
 	}
 }
 
-@media only screen and (max-width: 18.75em) {
+@media only screen and (max-width: 23.75em) {
 	.imgtitle {
-		font-size: 1.5em;
+		font-size: 1.8em;
+	}
+	.wht {
+		font-size: 0.6em;
+	}
+}
+
+@media only screen and (max-width: 325px) {
+	.imgtitle {
+		font-size: 1.1em;
 	}
 	.wht {
 		font-size: 0.5em;
