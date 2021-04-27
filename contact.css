@@ -130,4 +130,7 @@ textarea.contact-form-text {
 		margin-right: 0px;
 		margin-top: 0px;
 	}
+	.gotobtn{
+		width: 5px;
+	}
 }
