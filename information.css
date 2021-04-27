@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+}
 .centeredinfotext {
 	position: absolute;
 	top: 50%;
@@ -21,9 +28,6 @@
 		),
 		url("/images/infoimg.webp");
 
-	/* Set a specific height */
-	min-height: 500px;
-
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -42,11 +46,12 @@ body {
 
 p {
 	color: #011640;
+	font-size: 20px;
 }
 
 h3,
 h2 {
-	color: #23312e;
+	color: white;
 }
 
 .wrapper {
@@ -76,11 +81,20 @@ h2 {
 }
 
 .dyk {
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	margin-top: 0.4em;
+	font-weight: bold;
 }
-
+.dyk p {
+	font-weight: normal;
+	font-size: 30px;
+	color: white;
+}
+.rowend a {
+	color: #011640;
+	font-style: italic;
+}
 .incl {
 	margin-left: 2em;
 }
@@ -115,6 +129,10 @@ h2 {
 	margin: auto;
 	position: relative;
 	top: 17%;
+}
+
+.rowend {
+	margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 93.75em) {
@@ -198,7 +216,7 @@ h2 {
 
 @media only screen and (max-width: 325px) {
 	.imgtitle {
-		font-size: 1.1em;
+		font-size: 1.3em;
 	}
 	.wht {
 		font-size: 0.5em;
