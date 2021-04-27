@@ -326,9 +326,6 @@ a {
 }
 
 @media screen and (max-height: 980px) {
-  .header-img {
-    height: 800px;
-  }
   .img-content p {
     padding: 0 !important;
   }
