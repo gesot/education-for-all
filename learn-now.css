@@ -42,13 +42,18 @@ a {
 /* inserting background header img */
 .header-img {
   height: 97vh;
-  background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)),
+  background: radial-gradient(
+      circle,
+      rgba(123, 122, 145, 0.6166841736694677) 0%,
+      rgba(0, 0, 66, 0.5270483193277311) 19%,
+      rgba(1, 0, 51, 0.7679446778711485) 100%
+    ),
     url("images/d3.jpg") no-repeat center/cover;
 }
 
 .img-content {
   position: absolute;
-  top: 40%;
+  top: 39%;
   text-align: center;
   width: 100%;
 }
@@ -133,6 +138,8 @@ a {
   font-weight: 300;
   font-family: "Kiwi Maru", serif;
 }
+/* ---------------------------------------------------------- */
+/* -----------------------AGES HEADER---------------------- */
 
 .ages-header {
   text-align: center;
@@ -142,7 +149,7 @@ a {
   margin-bottom: 80px;
   color: #fff;
 }
-
+/* LINES BETWEEN HEADER */
 .wrapper {
   padding-bottom: 30px;
 }
@@ -168,6 +175,8 @@ a {
     transparent
   );
 }
+
+/* ------------------------------------------ */
 
 /* CARD-AREA */
 
