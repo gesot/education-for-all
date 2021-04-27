@@ -96,3 +96,38 @@ textarea.contact-form-text {
   transition: unset;
   border-color: rgb(235, 235, 235);
 }
+
+@media all and (max-width: 1200px) {
+	.contact-wrap{
+		width: 55%;
+	}
+	.contact-wrap h1{
+		font-size: 40px;
+	}
+}
+
+
+@media all and (max-width: 600px) {
+	.contact-wrap{
+		width: 75%;
+	}
+	.contact-wrap h1{
+		font-size: 37px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+}
+
+
+@media all and (max-width: 367px) {
+	.contact-wrap{
+		width: 75%;
+	}
+	.contact-wrap h1{
+		font-size: 30px;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+}
