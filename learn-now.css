@@ -48,12 +48,12 @@ a {
       rgba(0, 0, 66, 0.5270483193277311) 19%,
       rgba(1, 0, 51, 0.7679446778711485) 100%
     ),
-    url("images/d3.jpg") no-repeat center/cover;
+    url("images/learn1.jpg") no-repeat center/cover;
 }
 
 .img-content {
   position: absolute;
-  top: 39%;
+  top: 36%;
   text-align: center;
   width: 100%;
 }
@@ -62,7 +62,7 @@ a {
 .header-img .img-content h1 {
   text-align: center;
   color: #fff;
-  font-size: 100px;
+  font-size: 6.25em;
   font-family: "poppins", sans-serif;
   line-height: 1.35;
 }
