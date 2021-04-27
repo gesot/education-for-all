@@ -167,36 +167,6 @@ p {
 
 /*------------------- END OF HEADER-------------- */
 
-/* ------------------------------------------- */
-/*------------------BUTTONS------------------- */
-
-.buttons-container {
-  text-align: center;
-  margin-top: 15px;
-}
-.header-img .img-content a {
-  display: inline-block;
-  padding: 10px 34px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "poppins", sans-serif;
-  background: #fff;
-  color: #464646;
-  border: #fff solid 1px;
-  cursor: pointer;
-  position: relative;
-  line-height: 1.2;
-}
-
-.header-img .img-content a:hover {
-  background: #5a5a5a;
-  color: #fff;
-}
-
-.header-img .img-content a:focus {
-  outline: none !important;
-}
-
 /*-----------------------MAIN CONTENT------------------------*/
 .intro {
   margin: 0 auto;
@@ -226,13 +196,6 @@ p {
   padding-bottom: 1.9em;
 }
 
-.desc p {
-  font-size: 1.2em;
-}
-.desc h4 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
 .boxbox-body {
   width: 100%;
   height: 1000px;
@@ -249,7 +212,13 @@ p {
   width: 100%;
   height: auto;
 }
-
+.desc p {
+  font-size: 1.2em;
+}
+.desc h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
 .desc {
   padding: 15px;
   text-align: center;
@@ -314,6 +283,16 @@ a {
 #donate-volunteer {
   margin-top: 6em;
   margin-bottom: 6em;
+  font-size: 1.2em;
+}
+#donate-volunteer h2 {
+  color: #011640;
+}
+#donate-volunteer hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 /*RECOMEMNDATIONS CSS*/
 
@@ -384,4 +363,5 @@ a {
 #next {
   color: lightskyblue;
   font-size: 8em;
+  margin-bottom: 0.6em;
 }
