@@ -4,8 +4,11 @@
   font-family: "Poppins";
   box-sizing: border-box;
 }
-.container {
-  display: flex;
+.register {
+  background-image: url(images/1.jpg);
+}
+.register.container {
+  display: block;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -15,17 +18,15 @@
   color: #fff;
   margin-bottom: 0px;
   padding-top: 50px;
-  background-image: url(images/infoimg.jpg);
 }
 .card {
   margin-bottom: 10vh;
   border: 1px solid #333;
   border-radius: 2px;
-
+  margin: 0 auto;
   width: 400px;
   height: 600px;
-
-  prespective: 1000px;
+  perspective: 1000px;
 }
 .inner-box {
   position: relative;
@@ -132,7 +133,6 @@ footer button {
   transition: 0.3s;
 }
 
-
 /* .submit-btn::after{
 	content: '\27a4';
 	color: cyan;
@@ -178,59 +178,57 @@ footer button {
   color: rgb(206, 206, 206);
 }
 
-
 @media all and (max-width: 487px) {
-	.container{
-		height: 700px;
-	}
-	.card{
-		width: 120%;
-		height: 160%;
-		top: 10px;
-	}
-	.btn{
-		height:85px;
-	}
-	.card-back .submit-btn{
-		height:55px;
-	}
+  .container {
+    height: 700px;
+  }
+  .card {
+    width: 120%;
+    height: 160%;
+    top: 10px;
+  }
+  .btn {
+    height: 85px;
+  }
+  .card-back .submit-btn {
+    height: 55px;
+  }
 }
 
 @media all and (max-width: 820px) {
-	.container{
-		height: 700px;
-	}
-	.card{
-		width: 80%;
-		height: 130%;
-		top: 20px;
-	}
-	.btn{
-		height:85px;
-	}
-	.card-back .submit-btn{
-		height:55px;
-	}
+  .container {
+    height: 700px;
+  }
+  .card {
+    width: 80%;
+    height: 130%;
+    top: 20px;
+  }
+  .btn {
+    height: 85px;
+  }
+  .card-back .submit-btn {
+    height: 55px;
+  }
 }
 
-}
 @media all and (max-width: 1200px) {
-	.container{
-		height: 700px;
-	}
-	.card{
-		width: 70%;
-		height: 100%;
-		top: 10px;
-	}
+  .container {
+    height: 700px;
+  }
+  .card {
+    width: 70%;
+    height: 100%;
+    top: 10px;
+  }
 }
 @media all and (max-width: 2400px) {
-	.container{
-		height: 900px;
-	}
-	.card{
-		width: 50%;
-		height: 80%;
-		top: 30px;
-	}
+  .container {
+    height: 900px;
+  }
+  .card {
+    width: 50%;
+    height: 80%;
+    top: 30px;
+  }
 }
