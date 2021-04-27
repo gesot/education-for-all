@@ -329,6 +329,7 @@ a {
 .container {
   position: relative;
   width: 50%;
+  margin-bottom: 4em;
 }
 .middle {
   transition: 0.5s ease;
