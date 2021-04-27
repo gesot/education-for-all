@@ -41,14 +41,25 @@ a {
 /* ------------------HEADER------------------------------- */
 /* inserting background header img */
 .header-img {
-  height: 97vh;
-  background: radial-gradient(
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  background-image: radial-gradient(
       circle,
       rgba(123, 122, 145, 0.6166841736694677) 0%,
-      rgba(0, 0, 66, 0.5270483193277311) 19%,
+      rgba(0, 0, 66, 0.5270483193277311) 32%,
       rgba(1, 0, 51, 0.7679446778711485) 100%
     ),
-    url("images/learn1.jpg") no-repeat center/cover;
+    url("/images/learn1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img-content {
@@ -294,7 +305,7 @@ a {
 
   .text-container .main-text h2 {
     font-size: 60px !important;
-	top: 20px;
+    top: 20px;
   }
   .text-container .main-text p {
     width: 100% !important;
@@ -314,16 +325,15 @@ a {
   }
 }
 
-
 @media screen and (max-height: 980px) {
   .header-img {
-	  height: 800px;
+    height: 800px;
   }
   .img-content p {
     padding: 0 !important;
   }
   .img-content {
-	 position: relative;
+    position: relative;
     top: 30% !important;
   }
 }
@@ -357,12 +367,12 @@ a {
   .ages-header {
     font-size: 60px;
   }
-   .img-content {
+  .img-content {
     top: 10% !important;
   }
 }
-@media screen and (max-width: 901px){
-	img-content{
-		top: 20px;
-	}
+@media screen and (max-width: 901px) {
+  img-content {
+    top: 20px;
+  }
 }
