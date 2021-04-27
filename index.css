@@ -311,12 +311,13 @@ input {
 }
 
 /* -------------------------------------------------------- */
-/*-------------- FOOTER STYLING ----------------------------*/
+/*------------------- FOOTER STYLING -----------------------*/
 
 footer {
-  position: relative;
+  position: absolute;
   width: 100%;
   background: #000714;
+  
 }
 footer h2,
 footer div,
