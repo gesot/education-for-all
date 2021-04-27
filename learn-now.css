@@ -134,9 +134,9 @@ a {
   width: 40%;
   margin: auto;
   line-height: 1.875em;
-  font-size: 1.3em;
+  font-size: 22px;
   font-weight: 300;
-  font-family: "Kiwi Maru", serif;
+  font-family: "comic-sans", serif;
 }
 /* ---------------------------------------------------------- */
 /* -----------------------AGES HEADER---------------------- */
@@ -190,7 +190,7 @@ a {
   padding: 100px 0px;
 }
 .cards-area:last-child {
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 .card:last-child {
   padding-bottom: 0px;
@@ -253,6 +253,13 @@ a {
   font-size: 20px;
   text-align: left;
   font-family: "poppins", sans-serif;
+}
+
+.source-font {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 16px;
+  font-style: italic;
 }
 
 .card .card-footer {
