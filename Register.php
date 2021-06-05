@@ -36,7 +36,7 @@
 
   <body>
   
-
+ 
     <!---->
     <section class="register">
       <div class="container">
@@ -108,6 +108,7 @@
           </div>
         </div>
       </div>
+      <?php include('user-interaction/errors.php');?>
       <script>
         var card = document.getElementById("card");
 
@@ -118,6 +119,7 @@
           card.style.transform = "rotateY(0deg)";
         }
       </script>
+
     </section>
 
     <!--START OF FOOTER-->
