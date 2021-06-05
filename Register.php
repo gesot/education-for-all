@@ -32,6 +32,7 @@
   </head>
 
   <body>
+  <?php session_start(); ?>
   <?php include('nav/navbar.php');?>
 
     <!---->
@@ -102,6 +103,7 @@
           </div>
         </div>
       </div>
+      <?php include('user-interaction/errors.php');?>
       <script>
         var card = document.getElementById("card");
 
