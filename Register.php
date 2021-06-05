@@ -32,7 +32,7 @@
   </head>
 
   <body>
-  <?php session_start(); ?>
+  <?php session_start();?>
   <?php include('nav/navbar.php');?>
 
     <!---->
@@ -114,6 +114,7 @@
           card.style.transform = "rotateY(0deg)";
         }
       </script>
+
     </section>
 
     <!--START OF FOOTER-->
