@@ -27,12 +27,15 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <?php include('nav/navbar.php');?>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+    <script src="validate.js"></script>
   </head>
 
   <body>
-  <?php include('nav/navbar.php');?>
+  
 
     <!---->
     <section class="register">
@@ -67,28 +70,31 @@
             </div>
             <div class="card-back">
               <h3>Create an account</h3>
-              <form action="user-interaction/register.php" method="POST">
+              <form action="user-interaction/register.php" id="register-form" method="POST">
                 <input
                   type="text"
                   name="username"
                   class="input-box"
-                  placeholder="Username"
-                  required
+                  placeholder="Username"                               
+                  
                 />
+             
                 <input
                   type="email"
                   name="email"
                   class="input-box"
                   placeholder="Email"
-                  required
+               
                 />
                 <input
                   type="password"
-                  name="password"
+                  name="password"   
+                  id = "register-password"      
                   class="input-box"
                   placeholder="Password"
-                  required
+                 
                 />
+            
                 <button type="submit" name="submit" value='sumbit' class="submit-btn">
                   Create your account
                 </button>

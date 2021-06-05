@@ -114,6 +114,21 @@
   font-size: 16px;
 }
 
+.username-error {
+  display: block;
+  color: coral;
+  position: relative;
+  margin-left: 5px;
+  bottom: 14px;
+}
+.password-error {
+  display: block;
+  color: coral;
+  position: relative;
+  margin-left: 5px;
+  bottom: 14px;
+}
+
 button {
   width: 100%;
   background: transparent;
