@@ -11,7 +11,8 @@ $("#register-form").validate({
     },
     email:{
       required: true,
-      email: true
+      email: true,
+      remote: 'user-interaction/register.php'
     },
     password:{
       required: true,
