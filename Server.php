@@ -9,25 +9,16 @@ $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users')or die(mys
 function isset_username($username){
 
 global $connection;
-
 $username = trim($username);
-
 $query = "SELECT COUNT(*) AS num FROM user WHERE username='" .mysqli_real_escape_string($connection,$username). "'";
-
 $result = mysqli_query($connection,$query);
-
 $row = mysqli_fetch_array($result);
-
 if($row['num']>=1){
-
 return TRUE; // true if user exists
-
 }
 
 else{
-
 return FALSE;
-
 }
 
 }
@@ -36,29 +27,17 @@ return FALSE;
 //function to verify the existence of the email
 
 function isset_email($email){
-
 global $connection;
-
 $email = trim($email);
-
 $query = "SELECT COUNT(*) AS num FROM user WHERE email='" .mysqli_real_escape_string($connection,$email). "'";
-
 $result = mysqli_query($connection,$query);
-
 $row = mysqli_fetch_array($result);
-
 if($row['num']>=1){
-
 return TRUE; // true if user exists
-
 }
-
 else{
-
 return FALSE;
-
 }
-
 }
 
 
