@@ -8,7 +8,7 @@
     <title>footer</title>
 </head>
 <body>
-<div class="container-fluid" style="margin-top: 40px; padding: 20px">
+<div class="container-fluid" name="plain-header" style="margin-top: 40px; padding: 20px">
         <div class="row">
           <div class="col-12 col-md-4">
             <h2>About us</h2>
@@ -88,6 +88,8 @@
             ><span> 2021 All rights reserved.</span>
           </div>
         </div>
-      </div>
+        </div>
+</div>
+
 </body>
 </html>

@@ -42,7 +42,7 @@
 			</li>
 			<li><a href="films.php">Docs/Films/Series</a></li>
 			<li><a href="ContactUs.php">Contact Us</a></li>
-			<li><a href="Register.php">Sign Up/ Log In</a></li>
+			<li><?php include('nav/logged-nav.php');?></li>
 		</ul>
 	</nav>
 </body>
