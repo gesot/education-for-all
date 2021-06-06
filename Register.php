@@ -44,7 +44,7 @@
           <div class="inner-box" id="card">
             <div class="card-front">
               <h3>Log in</h3>
-              <form action="" method="POST">
+              <form action="user-interaction/login.php" id="login-form" method="POST">
                 <input
                   type="email"
                   name='email'
@@ -108,7 +108,6 @@
           </div>
         </div>
       </div>
-      <?php include('user-interaction/errors.php');?>
       <script>
         var card = document.getElementById("card");
 
