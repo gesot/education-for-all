@@ -70,7 +70,7 @@
             </div>
             <div class="card-back">
               <h3>Create an account</h3>
-              <form action="user-interaction/register.php" id="register-form" method="POST">
+              <form action="Server.php" id="register-form" method="POST">
                 <input
                   type="text"
                   name="username"
