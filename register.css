@@ -38,8 +38,8 @@
   border: 1px solid #333;
   border-radius: 2px;
   margin: 0 auto;
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  height: 700px;
   perspective: 1000px;
   margin-top: 3vh;
 }
@@ -116,6 +116,13 @@
   top: -15px;
 }
 #email-error {
+  display: block;
+  position: relative;
+  color: coral;
+  top: -15px;
+}
+
+#register-password-error {
   display: block;
   position: relative;
   color: coral;
