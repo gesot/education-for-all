@@ -20,8 +20,9 @@
         $sqlQuery = "INSERT INTO user (username, email, password, reg_date) 
         VALUES ('$username', '$email', '$password_hash', CURRENT_TIMESTAMP)";
         if (mysqli_query($connection, $sqlQuery)) {
+            echo "New record created successfully";
             $_SESSION['isLogged'] = true;
-            header("Location:/home.php");
+            header('Location: /PSPI/home.php');
       } else {
             echo "Error: " . $sqlQuery . "<br>" . mysqli_error($connection);
       }
