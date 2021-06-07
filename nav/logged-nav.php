@@ -7,5 +7,9 @@
     else{
         echo "<a href='Register.php'>" . 'Sign Up/ Log In' . "</a>";
     }
+
+    }
+    else{
+        echo "<a href='Register.php'>" . 'Sign Up/ Log In' . "</a>";
     }
 ?>

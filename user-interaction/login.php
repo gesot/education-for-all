@@ -13,7 +13,6 @@
         $checkUserQuery = "SELECT * FROM `user` WHERE email='$email' AND password='$password' LIMIT 1";
         $result = mysqli_query($connection, $checkUserQuery);
         if(mysqli_num_rows($result) == 1){
-            
             echo 'Signup complete ';
             $_SESSION['isLogged'] = true;
             header('Location: /home.php');

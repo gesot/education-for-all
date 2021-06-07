@@ -2,6 +2,7 @@
     session_start();
     //establish connection to the sql databse
    $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
+   $_SESSION['isLogged'] = false;
   //evaluate connection  
   if (!$connection){
     echo 'Connection error: ' . mysqli_connect_error();

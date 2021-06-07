@@ -44,7 +44,7 @@
           <div class="inner-box" id="card">
             <div class="card-front">
               <h3>Log in</h3>
-              <form action="user-interaction/login.php" id="login-form" method="POST">
+              <form action="user-interaction/login.php" method="POST">
                 <input
                   type="email"
                   name='email'
