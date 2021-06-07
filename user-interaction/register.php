@@ -7,7 +7,7 @@
   if (!$connection){
     echo 'Connection error: ' . mysqli_connect_error();
   }
-
+    //
     //write mysql query
     
     //$errors = array();
@@ -22,7 +22,7 @@
         if (mysqli_query($connection, $sqlQuery)) {
             echo "New record created successfully";
             $_SESSION['isLogged'] = true;
-            header('Location: /PSPI/home.php');
+            header('Location: /home.php');
       } else {
             echo "Error: " . $sqlQuery . "<br>" . mysqli_error($connection);
       }
