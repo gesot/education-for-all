@@ -17,8 +17,8 @@
             echo"$verify";
             if($verify){
                 echo 'Signup complete ';
-                //$_SESSION['isLogged'] = true;
-                //header('Location: /home.php');
+                $_SESSION['isLogged'] = true;
+                header('Location: /home.php');
             }
         }
         else{
