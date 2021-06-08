@@ -3,6 +3,7 @@
     $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
     $errors = array();
     $_SESSION['isLogged'] = false;
+    $_SESSION['isNotValid'] = false;
     if(isset($_POST)){
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
@@ -21,10 +22,13 @@
                 header('Location: /PSPI/home.php');
             }
             else{
-                echo 'Wrong email or password';
+                $_SESSION['isNotValid'] =  true;
+                header('Location: /PSPI/Register.php');
             }
         }
         else{
+            $_SESSION['isNotValid'] =  true;
+            header('Location: /PSPI/Register.php');
             //mail does not exist
         }
 
