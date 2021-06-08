@@ -20,6 +20,9 @@
                 $_SESSION['isLogged'] = true;
                 header('Location: /PSPI/home.php');
             }
+            else{
+                echo 'Wrong email or password';
+            }
         }
         else{
             //mail does not exist
@@ -27,4 +30,3 @@
 
     }
 ?>
-//
