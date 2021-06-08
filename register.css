@@ -112,20 +112,20 @@
 #username-error {
   display: block;
   position: relative;
-  color: coral;
+  color: #e87c03;
   top: -15px;
 }
 #email-error {
   display: block;
   position: relative;
-  color: coral;
+  color: #e87c03;
   top: -15px;
 }
 
 #register-password-error {
   display: block;
   position: relative;
-  color: coral;
+  color: #e87c03;
   top: -15px;
 }
 
