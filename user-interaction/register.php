@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['username'] = " ";
 //establish connection to the sql databse
 $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
 $_SESSION['isLogged'] = false;
@@ -22,7 +23,7 @@ if (isset($_POST)) {
   } else {
     echo "Error: " . $sqlQuery . "<br>" . mysqli_error($connection);
   }
-
+}
 function validateData($input)
 {
   $input = trim($input);
@@ -30,3 +31,4 @@ function validateData($input)
   $input = htmlspecialchars($input);
   return $input;
 }
+?>
