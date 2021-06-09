@@ -5,7 +5,7 @@
     $_SESSION['isLogged'] = false;
     $_SESSION['isNotValid'] = false;
     $_SESSION['username'] = " ";
-    if(isset($_POST)){
+    if(isset($_POST['submit-login'])){
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
         //if email exists fetch encrypted password from database
@@ -34,5 +34,7 @@
             //mail does not exist
         }
 
+    }else{
+        header('Location: ../Register.php');
     }
 ?>

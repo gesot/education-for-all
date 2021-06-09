@@ -1,224 +1,224 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
-	scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 .centeredinfotext {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #011649;
-	font-size: 2.8vw;
-	font-weight: bold;
-	text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 9px white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #011649;
+  font-size: 2.8vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 9px white;
 }
 
 .foo {
-	width: 100%;
-	object-fit: cover;
-	height: 100vh;
-	background-image: radial-gradient(
-			circle,
-			rgba(123, 122, 145, 0.6166841736694677) 0%,
-			rgba(0, 0, 66, 0.5270483193277311) 32%,
-			rgba(1, 0, 51, 0.7679446778711485) 100%
-		),
-		url("/images/infoimg.webp");
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle,
+      rgba(123, 122, 145, 0.6166841736694677) 0%,
+      rgba(0, 0, 66, 0.5270483193277311) 32%,
+      rgba(1, 0, 51, 0.7679446778711485) 100%
+    ),
+    url("images/infoimg.webp");
 
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imgtitle {
-	color: white;
-	font-size: 6.25em;
+  color: white;
+  font-size: 6.25em;
 }
 
 body {
-	background: #5f8594;
+  background: #5f8594;
 }
 
 p {
-	color: #011640;
-	font-size: 20px;
+  color: #011640;
+  font-size: 20px;
 }
 
 h3,
 h2 {
-	color: white;
+  color: white;
 }
 
 .wrapper {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .divider {
-	position: relative;
-	margin-top: 50px;
-	height: 1px;
+  position: relative;
+  margin-top: 50px;
+  height: 1px;
 }
 
 .div-transparent:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(
-		to right,
-		transparent,
-		rgb(48, 49, 51),
-		transparent
-	);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
 }
 
 .dyk {
-	font-size: 40px;
-	text-align: center;
-	margin-top: 0.4em;
-	font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0.4em;
+  font-weight: bold;
 }
 .dyk p {
-	font-weight: normal;
-	font-size: 30px;
-	color: white;
+  font-weight: normal;
+  font-size: 30px;
+  color: white;
 }
 .rowend a {
-	color: #011640;
-	font-style: italic;
+  color: #011640;
+  font-style: italic;
 }
 .incl {
-	margin-left: 2em;
+  margin-left: 2em;
 }
 
 #qm {
-	color: red;
+  color: red;
 }
 
 #titlecrl {
-	color: coral;
+  color: coral;
 }
 
 .wht {
-	color: white;
+  color: white;
 }
 
 .infobtn {
-	font-size: 1.5rem;
-	padding: 0.5rem 1rem;
-	transition-duration: 0.5s;
-	border-radius: 0%;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.5s;
+  border-radius: 0%;
 }
 
 .infobtn:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .infostart {
-	width: 100%;
-	height: 50%;
-	margin: auto;
-	position: relative;
-	top: 17%;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  position: relative;
+  top: 17%;
 }
 
 .rowend {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 93.75em) {
-	.imgtitle {
-		font-size: 5.5em;
-	}
-	.wht {
-		font-size: 1.8em;
-	}
+  .imgtitle {
+    font-size: 5.5em;
+  }
+  .wht {
+    font-size: 1.8em;
+  }
 }
 
 @media only screen and (max-width: 83.125em) {
-	.imgtitle {
-		font-size: 5em;
-	}
-	.wht {
-		font-size: 1.5em;
-	}
+  .imgtitle {
+    font-size: 5em;
+  }
+  .wht {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 75em) {
-	.imgtitle {
-		font-size: 4.5em;
-	}
-	.wht {
-		font-size: 1.2em;
-	}
+  .imgtitle {
+    font-size: 4.5em;
+  }
+  .wht {
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 65.625em) {
-	.imgtitle {
-		font-size: 4em;
-	}
-	.wht {
-		font-size: 1.2em;
-	}
+  .imgtitle {
+    font-size: 4em;
+  }
+  .wht {
+    font-size: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 59.6875em) {
-	.imgtitle {
-		font-size: 3.5em;
-	}
-	.wht {
-		font-size: 0.9em;
-	}
+  .imgtitle {
+    font-size: 3.5em;
+  }
+  .wht {
+    font-size: 0.9em;
+  }
 }
 @media only screen and (max-width: 50em) {
-	.imgtitle {
-		font-size: 3em;
-	}
-	.wht {
-		font-size: 0.9em;
-	}
+  .imgtitle {
+    font-size: 3em;
+  }
+  .wht {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 34.375em) {
-	.imgtitle {
-		font-size: 2.3em;
-	}
-	.wht {
-		font-size: 0.7em;
-	}
+  .imgtitle {
+    font-size: 2.3em;
+  }
+  .wht {
+    font-size: 0.7em;
+  }
 }
 @media only screen and (max-width: 27em) {
-	.imgtitle {
-		font-size: 2em;
-	}
-	.wht {
-		font-size: 0.6em;
-	}
+  .imgtitle {
+    font-size: 2em;
+  }
+  .wht {
+    font-size: 0.6em;
+  }
 }
 
 @media only screen and (max-width: 23.75em) {
-	.imgtitle {
-		font-size: 1.8em;
-	}
-	.wht {
-		font-size: 0.6em;
-	}
+  .imgtitle {
+    font-size: 1.8em;
+  }
+  .wht {
+    font-size: 0.6em;
+  }
 }
 
 @media only screen and (max-width: 325px) {
-	.imgtitle {
-		font-size: 1.3em;
-	}
-	.wht {
-		font-size: 0.5em;
-	}
+  .imgtitle {
+    font-size: 1.3em;
+  }
+  .wht {
+    font-size: 0.5em;
+  }
 }

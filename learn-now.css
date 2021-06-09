@@ -48,7 +48,7 @@ a {
       rgba(0, 0, 66, 0.5270483193277311) 32%,
       rgba(1, 0, 51, 0.7679446778711485) 100%
     ),
-    url("/images/learn1.jpg");
+    url("images/learn1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
