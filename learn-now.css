@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+b {
+  color: #011640;
+}
 /* Body styling */
 html,
 body {

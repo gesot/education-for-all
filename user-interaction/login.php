@@ -18,7 +18,10 @@
             if($verify){
                 echo 'Signup complete ';
                 $_SESSION['isLogged'] = true;
-                header('Location: /home.php');
+                header('Location: ../home.php');
+            }
+            else{
+                echo 'Wrong email or password';
             }
         }
         else{
@@ -27,4 +30,3 @@
 
     }
 ?>
-//
