@@ -4,6 +4,7 @@
     $errors = array();
     $_SESSION['isLogged'] = false;
     $_SESSION['isNotValid'] = false;
+    $_SESSION['username'] = " ";
     if(isset($_POST)){
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
@@ -19,16 +20,17 @@
             if($verify){
                 echo 'Signup complete ';
                 $_SESSION['isLogged'] = true;
+                $_SESSION['username'] = $result['username'];
                 header('Location: ../home.php');
             }
             else{
                 $_SESSION['isNotValid'] =  true;
-                header('Location: /PSPI/Register.php');
+                header('Location: ../Register.php');
             }
         }
         else{
             $_SESSION['isNotValid'] =  true;
-            header('Location: /PSPI/Register.php');
+            header('Location: ../Register.php');
             //mail does not exist
         }
 
