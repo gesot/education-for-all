@@ -1,37 +1,54 @@
 <?php
 session_start();
 
-$loggedIn = false;
-
-if (isset($_SESSION['loggedIn']) && isset($_SESSION['username'])) {
-    $loggedIn = true;
-}
-
 $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
 
+$loggedIn = false;
+$name = '';
+
+if (isset($_SESSION['isLogged']) && isset($_SESSION['username'])) {
+    $loggedIn = true;
+    $name = $_SESSION['username'];
+}
 
 
-$sql = $connection->query("SELECT id FROM user ORDER BY id DESC LIMIT 1") or die($connection->error);
+
+$sql = $connection->query("SELECT id FROM user WHERE username = '$name'  LIMIT 1") or die($connection->error);
+
 $data = $sql->fetch_assoc();
 $_SESSION['userID'] = $data['id'];
 
-/**if (isset($_POST['getAllComments'])) {
+function createCommentRow($data)
+{
+    return '
+            <div class="comment">
+                <div class="user">' . $data['username'] . ' <span class="time">' . $data['createdOn'] . '</span></div>
+                <div class="userComment">' . $data['comment'] . '</div>
+                
+            </div>
+        ';
+}
+
+if (isset($_POST['getAllComments'])) {
     $start = $connection->real_escape_string($_POST['start']);
 
-
+    $response = "";
     $sql = $connection->query("SELECT comments.id, username, comment, DATE_FORMAT(comments.createdOn, '%Y-%m-%d') AS createdOn FROM comments INNER JOIN user ON comments.userID = user.id ORDER BY comments.id DESC LIMIT $start, 20");
     while ($data = $sql->fetch_assoc())
         $response .= createCommentRow($data);
-}**/
+    exit($response);
+}
 
 if (isset($_POST['addComment'])) {
     $comment = $connection->real_escape_string($_POST['comment']);
 
     $connection->query("INSERT INTO comments (userID, comment, createdOn) VALUES ('" . $_SESSION['userID'] . "','$comment',NOW())");
-    exit('success');
+    $sql = $connection->query("SELECT comments.id, username, comment, DATE_FORMAT(comments.createdOn, '%Y-%m-%d') AS createdOn FROM comments INNER JOIN user ON comments.userID = user.id ORDER BY comments.id DESC LIMIT 1");
+    $data = $sql->fetch_assoc();
+    exit(CreateCommentRow($data));
 }
-//$sqlNumComments = $connection->query("SELECT id FROM comments");
-//$numComments = $sqlNumComments->num_rows;
+$sqlNumComments = $connection->query("SELECT id FROM comments");
+$numComments = $sqlNumComments->num_rows;
 ?>
 
 <!doctype html>
@@ -67,18 +84,9 @@ if (isset($_POST['addComment'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2><b>335 Comments</b></h2>
+                <h2><b id="numComments"><?php echo $numComments ?> Comments</b></h2>
                 <div class="userComments">
-                    <div class="comment">
-                        <div class="user">Senaid B <span class="time">2019-07-15</span></div>
-                        <div class="userComment">this is my comment</div>
-                        <div class="replies">
-                            <div class="comment">
-                                <div class="user">Senaid B <span class="time">2019-07-15</span></div>
-                                <div class="userComment">this is my comment</div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -88,6 +96,7 @@ if (isset($_POST['addComment'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+        var max = <?php echo $numComments ?>;
         $(document).ready(function() {
 
             $("#addComment").on('click', function() {
@@ -103,17 +112,20 @@ if (isset($_POST['addComment'])) {
                             comment: comment
                         },
                         success: function(response) {
-                            console.log(response);
+                            max++;
+                            $("#numComments").html(max + " Comments");
+                            $(".userComments").prepend(response);
                         }
                     });
                 } else
                     alert('Please Check Your Inputs');
             });
 
+            getAllComments(0, max);
         });
 
         //functioon that dinamically gets all comments from the database
-        /**function getAllComments(start, max) {
+        function getAllComments(start, max) {
             if (start > max) {
                 return;
             }
@@ -132,7 +144,7 @@ if (isset($_POST['addComment'])) {
                     getAllComments((start + 20), max);
                 }
             });
-        }**/
+        }
     </script>
 </body>
 

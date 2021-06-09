@@ -1,0 +1,82 @@
+.comments .comment_header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
+	padding: 15px 0;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.comments .comment_header .total {
+	color: black;
+	font-size: 14px;
+}
+.comments .comment_header .write_comment_btn {
+	margin: 0;
+}
+.comments .write_comment_btn,
+.comments .write_comment button {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	margin: 10px 0 0 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	border: 0;
+}
+.comments .write_comment_btn:hover,
+.comments .write_comment button:hover {
+	background-color: white;
+}
+.comments .write_comment {
+	display: none;
+	padding: 20px 0 10px 0;
+}
+.comments .write_comment textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	height: 150px;
+	margin-top: 10px;
+}
+.comments .write_comment input {
+	display: block;
+	width: 250px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.comments .write_comment button {
+	cursor: pointer;
+}
+.comments .comment {
+	padding-top: 10px;
+}
+.comments .comment .name {
+	display: inline;
+	padding: 0 5px 3px 0;
+	margin: 0;
+	font-size: 16px;
+	color: white;
+}
+.comments .comment .date {
+	color: white;
+	font-size: 14px;
+}
+.comments .comment .content {
+	padding: 5px 0 5px 0;
+}
+.comments .comment .reply_comment_btn {
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: white;
+}
+.comments .comment .replies {
+	padding-left: 30px;
+}
