@@ -40,7 +40,7 @@ p {
       rgba(0, 0, 66, 0.5270483193277311) 32%,
       rgba(1, 0, 51, 0.7679446778711485) 100%
     ),
-    url("/images/advance1.png");
+    url("images/advance1.png");
 
   /* Set a specific height */
   min-height: 500px;

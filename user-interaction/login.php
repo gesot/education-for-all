@@ -4,7 +4,7 @@
     $errors = array();
     $_SESSION['isLogged'] = false;
     $_SESSION['isNotValid'] = false;
-    if(isset($_POST)){
+    if(isset($_POST['submit-login'])){
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
         //if email exists fetch encrypted password from database
@@ -32,5 +32,7 @@
             //mail does not exist
         }
 
+    }else{
+        header('Location: /PSPI/Register.php');
     }
 ?>
