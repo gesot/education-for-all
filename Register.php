@@ -44,6 +44,14 @@
           <div class="inner-box" id="card">
             <div class="card-front">
               <h3>Log in</h3>
+              <?php 
+               if(isset($_SESSION['isNotValid'])){
+                if($_SESSION['isNotValid'] == true){
+                  echo '<p style="color:#e87c03;" >Wrong username or password. Please check your credentials.</p>';
+                  $_SESSION['isNotValid'] = false;
+                }                    
+               }                
+             ?>
               <form action="user-interaction/login.php" method="POST">
                 <input
                   type="email"
