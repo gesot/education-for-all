@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
     $query = "SELECT `id`,`username`,`email` FROM `user` 
               ORDER BY `reg_date` DESC  ";
