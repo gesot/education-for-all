@@ -16,6 +16,8 @@
 		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
 		<script src="contactus-validation.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 	</head>
     <body style="background-color: #fff">
   
@@ -32,7 +34,21 @@
 			<textarea class="contact-form-text" placeholder="Your message" name="message"></textarea>
 			<button class="btn" type="submit">Submit<input type="submit"></button>
 		</form>
+		<?php 
+               if(isset($_SESSION['messageSent'])){
+                if($_SESSION['messageSent'] == true){
+                 echo "<script> Swal.fire({
+									title: 'Message Sent!',
+									text: 'Do you want to continue',
+									icon: 'success',
+									confirmButtonText: 'yes'
+								})  </script>";
+                  $_SESSION['messageSent'] = false;
+                }                    
+               }                
+             ?>
    </div>
+
 	</div>
 <!--END OF CONTACT SECTION-->
 

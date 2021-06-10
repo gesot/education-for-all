@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['messageSent'] = false;
 //establish connection to the sql databse
 $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
 //evaluate connection  
@@ -19,6 +20,7 @@ if (isset($_POST)) {
   $sqlQuery = "INSERT INTO message (name, email, phone,message, reg_date) 
         VALUES ('$name', '$email', '$phone','$message', CURRENT_TIMESTAMP)";
   if (mysqli_query($connection, $sqlQuery)) {
+    $_SESSION['messageSent'] = true;
     echo "New record created successfully";
     header('Location: ../ContactUs.php');
   } else {
