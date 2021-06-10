@@ -5,6 +5,7 @@
     $_SESSION['isLogged'] = false;
     $_SESSION['isNotValid'] = false;
     $_SESSION['username'] = " ";
+    $_SESSION['email'] = " ";
     if(isset($_POST['submit-login'])){
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
@@ -21,6 +22,7 @@
                 echo 'Signup complete ';
                 $_SESSION['isLogged'] = true;
                 $_SESSION['username'] = $result['username'];
+                $_SESSION['email'] = $result['email'];
                 header('Location: ../home.php');
             }
             else{
