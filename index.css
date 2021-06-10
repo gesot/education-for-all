@@ -7,7 +7,7 @@
 
 nav {
   font-family: "Poppins", sans-serif;
-  background: #204959;
+  background: rgba(0, 0, 0, 0.1);
 }
 nav:after {
   content: "";
@@ -34,7 +34,7 @@ nav ul {
 nav ul li {
   float: left;
   display: inline-block;
-  background: #204959;
+  background: rgba(0, 0, 0, 0);
   margin: 0 5px;
 }
 nav ul li a {
