@@ -10,11 +10,10 @@
 			rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="admin-page.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="admin-page.css">
 	</head>
 
 <body>
@@ -52,14 +51,21 @@
 <!----------END OF ROWS---------->
 
 <!----------START OF TABLE---------->
+
+
     <h2 style="margin-left: 20px;">Table name</h2>
     <hr>
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
     <div class="col-md-7" style="overflow-y: scroll;height: 400px;">  
-    <table class="content-table" style="margin-left: 50px; margin-bottom: 100px;">
-        <?php include("user-interaction/user-table.php") ?>
-    </table>
+    <?php include("user-interaction/user-table.php") ?>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="padding-bottom:100px" >
+    <div class="row">
+    <div class="col-md-12" style="overflow-y: scroll;height: 400px;">  
+    <?php include("user-interaction/comment-table.php") ?>
     </div>
     </div>
     </div>

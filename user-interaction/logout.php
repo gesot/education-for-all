@@ -5,4 +5,3 @@
     $_SESSION['isLogged'] = false;
     header('Location: ../Register.php');
 ?>
-//
