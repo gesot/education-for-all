@@ -1,29 +1,40 @@
-body{
-  background-color: #f3f1f1	;
+body {
+  background-color: #f3f1f1;
 }
+/* search bar styling */
+#myInput {
+  display: block;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-left: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  color: #011640;
+}
+
 /*----------START OF BOXES----------*/
-.stat-box{
+
+.stat-box {
   margin: 0 auto;
-  width: 20em; 
-  height: 9em; 
-  background-color: #011640 ;
+  width: 20em;
+  height: 9em;
+  background-color: #011640;
   border-radius: 5%;
   box-shadow: 10em;
-    
 }
-.content h3{
+.content h3 {
   color: white;
 }
-.content p { 
-  font-size:1.25em;
+.content p {
+  font-size: 1.25em;
   color: white;
-
 }
-.content hr{
+.content hr {
   border-color: white;
   width: 50%;
 }
-.stat-box img{
+.stat-box img {
   width: 90%;
   height: 100%;
   padding-top: 1em;

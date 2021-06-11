@@ -13,11 +13,13 @@
 		<link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="admin-page.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 
 <body>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ...">
+
 <script>
 function myFunction() {
   // Declare variables
