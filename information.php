@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="information.css">
-  <link href="comments-test.css" rel="stylesheet" type="text/css">
+  <link href="comments-final.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
@@ -131,11 +131,12 @@
     </div>
   </div>
 
-  <div class="comments"></div>
+  <div class="container-fluid comments"></div>
 
+  <!--javascript code using fetch API to retrieve all comments-->
   <script>
-    const comments_page_id = 1; // This number should be unique on every page
-    fetch("comments-test.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
+    const comments_page_id = 1; // Unique page ID (must be unique to show only respective comments of each page)
+    fetch("comments-final.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
       document.querySelector(".comments").innerHTML = data;
       document.querySelectorAll(".comments .write_comment_btn, .comments .reply_comment_btn").forEach(element => {
         element.onclick = event => {

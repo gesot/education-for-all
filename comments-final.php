@@ -23,26 +23,6 @@ if (isset($_SESSION['isLogged']) && isset($_SESSION['username'])) {
 }
 
 
-// Below function will convert datetime to time elapsed string
-function time_elapsed_string($datetime, $full = false)
-{
-    $now = new DateTime;
-    $ago = new DateTime($datetime);
-    $diff = $now->diff($ago);
-    $diff->w = floor($diff->d / 7);
-    $diff->d -= $diff->w * 7;
-    $string = array('y' => 'year', 'm' => 'month', 'w' => 'week', 'd' => 'day', 'h' => 'hour', 'i' => 'minute', 's' => 'second');
-    foreach ($string as $k => &$v) {
-        if ($diff->$k) {
-            $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
-        } else {
-            unset($string[$k]);
-        }
-    }
-    if (!$full) $string = array_slice($string, 0, 1);
-    return $string ? implode(', ', $string) . ' ago' : 'just now';
-}
-
 // This function will populate the comments and comments replies using a loop
 // This function will populate the comments and comments replies using a loop
 function show_comments($comments, $parent_id = -1)
@@ -54,13 +34,16 @@ function show_comments($comments, $parent_id = -1)
     }
     // Iterate the comments using the foreach loop
     foreach ($comments as $comment) {
+        global $loggedIn;
         if ($comment['parent_id'] == $parent_id) {
-            // Add the comment to the $html variable
-            $html .= '
+
+            if ($loggedIn) {
+                // Add the comment to the $html variable
+                $html .= '
             <div class="comment">
                 <div>
                     <h3 class="name">' . htmlspecialchars($comment['name'], ENT_QUOTES) . '</h3>
-                    <span class="date">' . time_elapsed_string($comment['submit_date']) . '</span>
+                    <span class="date">' . ($comment['submit_date']) . '</span>
                 </div>
                 <p class="content">' . nl2br(htmlspecialchars($comment['content'], ENT_QUOTES)) . '</p>
                 <a class="reply_comment_btn" href="#" data-comment-id="' . $comment['id'] . '">Reply</a>
@@ -70,8 +53,22 @@ function show_comments($comments, $parent_id = -1)
                 </div>
             </div>
             ';
+            } else {
+                $html .= '
+            <div class="comment">
+                <div>
+                    <h3 class="name">' . htmlspecialchars($comment['name'], ENT_QUOTES) . '</h3>
+                    <span class="date">' . ($comment['submit_date']) . '</span>
+                </div>
+                <p class="content">' . nl2br(htmlspecialchars($comment['content'], ENT_QUOTES)) . '</p>
+                <div class="replies">
+                ' . show_comments($comments, $comment['id']) . '
+                </div>
+            </div> ';
+            }
         }
     }
+
     return $html;
 }
 
@@ -113,10 +110,14 @@ if (isset($_GET['page_id'])) {
 
 ?>
 
-
+<!--Header for showing the total number of comments and also the write comment button that can only be shown to signed in users.-->
 <div class="comment_header">
     <span class="total"><?= $comments_info['total_comments'] ?> comments</span>
-    <a href="#" class="write_comment_btn" data-comment-id="-1">Write Comment</a>
+    <?php
+    if ($loggedIn) {
+        echo '<a href="#" class="write_comment_btn" data-comment-id="-1">Write Comment</a>';
+    } else
+        echo '<p> Log in or Sign up to write a comment!' ?>
 </div>
 
 <?= show_write_comment_form() ?>
