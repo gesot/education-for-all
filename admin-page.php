@@ -45,36 +45,7 @@ function myFunction() {
 </script>
 
 <!----------START OF ROWS---------->
-    <div class="container-fluid" name="plain-header" style="margin-top: 40px; padding: 20px">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <h2>ΚΕΙΜΕΝΟ 1</h2>
-            <div class="content">
-                <p>
-                    ΠΛΗΡΟΦΟΡΙΕΣ
-                </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <h2>ΚΕΙΜΕΝΟ 2</h2>
-            <div class="content">
-                <p>
-                    ΠΛΗΡΟΦΟΡΙΕΣ
-                </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <h2>ΚΕΙΜΕΝΟ 3</h2>
-            <div class="content">
-                <p>
-                    ΠΛΗΡΟΦΟΡΙΕΣ
-                </p>
-            </div>
-          </div>
-        </div>
-    </div>
+    <?php include("user-interaction/stats.php"); ?>
 <!----------END OF ROWS---------->
 
 <!----------START OF TABLE---------->
