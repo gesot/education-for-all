@@ -17,6 +17,33 @@
 	</head>
 
 <body>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.querySelector(".content-table");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    td2 = tr[i].getElementsByTagName("td")[1];
+    if (td || td2) {
+      txtValue = td.textContent || td.innerText;
+      txtValue2 = td2.textContent || td2.innerText;
+      if ((txtValue.toUpperCase().indexOf(filter) > -1)||(txtValue2.toUpperCase().indexOf(filter) > -1)) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
 <!----------START OF ROWS---------->
     <div class="container-fluid" name="plain-header" style="margin-top: 40px; padding: 20px">
         <div class="row">
@@ -115,7 +142,6 @@
               <div class="email">
                 <div class="text">Email *</div>
                 <input type="email" required>
-                <textarea rows="1" cols="25" required></textarea>
               </div>
               <div class="msg">
                 <div class="text">Message *</div>
