@@ -1,34 +1,33 @@
 <?php
-    function deleteComments(&$array){
-        $parentIdQuery =  "SELECT  `id` FROM  `comments` WHERE  `parent_id` =  $comid "; //
+    function deleteComments($array){
+        $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
+        //$arraydata = implode(',',$array);
+        //echo "$array </br>";
+        $parentIdQuery =  "SELECT  `id` FROM  `comments` WHERE  `parent_id` IN ($array)"; //
         $parentId= mysqli_query($connection, $parentIdQuery);
-        if( mysqli_fetch_array($parentId)== false){
-            exit;
+        if( mysqli_num_rows($parentId) == 0){
+            //echo " Last node has no children </br> ";
+            //$del = mysqli_query($connection, "DELETE FROM `comments` where `id` = $array " );
+            
         } else {
+            //echo"joined else, ";
             $result = mysqli_fetch_array($parentId);
             foreach ($result as &$value){
-                deleteComment(mysqli_fetch_array($parentId)); 
+                deleteComments($value); 
+                //$del = mysqli_query($connection, "DELETE FROM `comments` where `id` = $value " );
+                //echo "deleted comment with id, </br> $value ";
+                //mysqli_close($connection);
             }
 
         }
-        $del = mysqli_query($connection, "DELETE FROM `comments` where `id` = $value " );
+        $del = mysqli_query($connection, "DELETE FROM `comments` where `id` = $array " );
+        echo "deleted comment with id '$array'</br>";
+        echo "</br> Exiting...";
+        
     }
     //session_start();
         $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
         $comid=$_GET['id'];
-        $parentIdQuery =  "SELECT  `id` FROM  `comments` WHERE  `parent_id` =  $comid "; //
-        $parentId= mysqli_query($connection, $parentIdQuery);
-        $result =  mysqli_fetch_array($parentId);
-        foreach ($result as &$value){
-            $del = mysqli_query($connection, "DELETE FROM `comments` where `id` = $value " );
-        }
-        $deleteQuery = "DELETE FROM `comments` where `id` = $comid";
-        $delete = mysqli_query($connection, $deleteQuery);
-        if($delete)
-        {
-            mysqli_close($connection); // Close connection
-            header('Location: /admin-page.php'); 
-            	
-        }
+        deleteComments($comid);      
     
 ?>
