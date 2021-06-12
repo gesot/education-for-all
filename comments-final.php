@@ -119,7 +119,6 @@ if (isset($_GET['page_id'])) {
     } else
         echo '<p> <a href="Register.php" style="color:white">Log in</a> or <a href="Register.php" style="color:white">Sign up</a> to write a comment!' ?>
 </div>
-<a href="Register.php">Log in</a>
 <?= show_write_comment_form() ?>
 
 <?= show_comments($comments, $parent_id = -1) ?>
