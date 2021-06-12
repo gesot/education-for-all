@@ -3,8 +3,8 @@
     //$_SESSION['username'] = " ";
     $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
     if(isset($_SESSION['isLogged'])){
-    $email = $_SESSION['email'];
-    $adminQuery = "SELECT * FROM `admin` WHERE adminEmail='$email' LIMIT 1";
+    $id = $_SESSION['id'];
+    $adminQuery = "SELECT * FROM `admin` WHERE userID='$id' LIMIT 1";
     $checkAdminQuery = mysqli_query($connection, $adminQuery);
     if($_SESSION['isLogged'] === true){
         echo "

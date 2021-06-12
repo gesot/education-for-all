@@ -53,7 +53,7 @@ function myFunction() {
 <!----------START OF TABLE---------->
 
 
-    <h2 style="margin-left: 20px;">Table name</h2>
+    <h2 style="margin-left: 20px;">Users</h2>
     <hr>
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
@@ -62,6 +62,9 @@ function myFunction() {
     </div>
     </div>
     </div>
+
+    <h2 style="margin-left: 20px;">Comments</h2>
+    <hr>
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
     <div class="col-md-12" style="overflow-y: scroll;height: 400px;">  
