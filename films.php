@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="information.css">
     <link rel="stylesheet" href="films.css">
-    <link href="comments-test.css" rel="stylesheet" type="text/css">
+    <link href="comments-final.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
@@ -169,7 +169,7 @@
 
     <script>
         const comments_page_id = 2; // This number should be unique on every page
-        fetch("comments-test.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
+        fetch("comments-final.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
             document.querySelector(".comments").innerHTML = data;
             document.querySelectorAll(".comments .write_comment_btn, .comments .reply_comment_btn").forEach(element => {
                 element.onclick = event => {
