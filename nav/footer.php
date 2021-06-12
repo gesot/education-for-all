@@ -60,23 +60,11 @@
           </div>
 
           <div class="col-12 col-md-4">
-            <h2>Contact us</h2>
+            <h2>Take action with us!</h2>
             <div class="content">
-              <form action="#">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required />
-                  <textarea rows="1" cols="25" required></textarea>
-                </div>
-                <div class="msg">
-                  <div class="text">Message *</div>
-                  <textarea rows="2" cols="25" required></textarea>
-                </div>
-                <div>
-                  <button class="btn btn-primary" type="submit">Send</button>
-                </div>
-              </form>
-            </div>
+            <a href="ContactUs.php" class="work-with-us">Contact Us</a>    
+            <a href="Register.php" class="work-with-us">Log in/Register</a>     
+            </div> 
           </div>
         </div>
         <div class="row">
