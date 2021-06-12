@@ -149,7 +149,7 @@
       document.querySelectorAll(".comments .write_comment form").forEach(element => {
         element.onsubmit = event => {
           event.preventDefault();
-          fetch("comments-test.php?page_id=" + comments_page_id, {
+          fetch("comments-final.php?page_id=" + comments_page_id, {
             method: 'POST',
             body: new FormData(element)
           }).then(response => response.text()).then(data => {
