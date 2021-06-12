@@ -15,9 +15,9 @@
         if(mysqli_num_rows($checkPassQuery) == 1){
             $result = mysqli_fetch_assoc($checkPassQuery);
             $hashedPassword = $result['password'];
-            echo "$hashedPassword"."  ";
+            //echo "$hashedPassword"."  ";
             $verify = password_verify($password, $hashedPassword);
-            echo"$verify";
+            //echo"$verify";
             if($verify){
                 echo 'Signup complete ';
                 $_SESSION['isLogged'] = true;
