@@ -35,9 +35,9 @@
 			</li>
 			<li><a href="learn-now.php">Learn Now<span class="fa fa-caret-down"></span></a>
 				<ul>
-					<li><a href="#kids-section">Kids</a></li>
-					<li><a href="#teenagers-section">Teenagers</a></li>
-					<li><a href="#adults-section">Adults</a></li>
+					<li><a href="learn-now.php#kids-section">Kids</a></li>
+					<li><a href="learn-now.php#teenagers-section">Teenagers</a></li>
+					<li><a href="learn-now.php#adults-section">Adults</a></li>
 				</ul>
 			</li>
 			<li><a href="films.php">Docs/Films/Series</a></li>

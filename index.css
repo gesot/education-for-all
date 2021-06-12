@@ -474,6 +474,21 @@ footer center {
   border-radius: 100%;
 }
 
+.work-with-us {
+  display: block;
+  width: fit-content;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.work-with-us:hover {
+  color: red;
+  text-decoration: none;
+}
+
 .gotopbtn:hover {
   background: #7ba6a1;
 }
