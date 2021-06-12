@@ -9,7 +9,8 @@ body {
   margin-left: 8px;
   background: #ddd;
   font-size: 17px;
-  border: none;
+  border: 0.5px solid rgb(126, 126, 126);
+  border-radius: 5px;
   color: #011640;
 }
 

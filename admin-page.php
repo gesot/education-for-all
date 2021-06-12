@@ -18,7 +18,7 @@
 
 <body>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ...">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search id/name...">
 
 <script>
 function myFunction() {
