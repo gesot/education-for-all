@@ -63,15 +63,31 @@ function myFunction() {
     </div>
     </div>
 
+    
+    <section id="commentTable">
     <h2 style="margin-left: 20px;">Comments</h2>
     <hr>
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
     <div class="col-md-12" style="overflow-y: scroll;height: 400px;">  
-    <?php include("user-interaction/comment-table.php") ?>
+        <table class='comment-table' style='margin-left: 50px; margin-bottom: 100px;'>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Page ID</th>
+            <th>Username</th>
+            <th>Comment</th>
+            <th>Manage</th>
+        </tr>
+        </thead><tbody>
+        <?php include("user-interaction/comment-table.php") ?>
+        </tbody> 
+      </table>
     </div>
     </div>
     </div>
+    </section>
+    
 
 <!----------END OF TABLE---------->
 
