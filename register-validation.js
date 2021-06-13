@@ -52,5 +52,33 @@ $("#register-form").validate({
 
 });
 
+$("#login-form").validate({
+  rules:
+  {
+    email:{
+      required: true,
+      email: true,
+      maxlength: 50
+    },
+    password:{
+      required: true,
+      minlength: 3,
+      maxlength: 50
+    }
+  },
+  messages:{
+    email:{
+      maxlength: 'email must contain between 3-50 letters',
+      required:'Please enter an email address',
+      email:'Please enter a valid email adress',
+    },
+    password:{
+      required: 'Please enter your password',
+      minlength: 'Password must contain between 3-50 letters',
+      maxlength: 'Password must contain between 3-50 letters',
+    }
+  }
+});
+
 
 });

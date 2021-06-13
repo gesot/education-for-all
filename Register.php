@@ -52,7 +52,7 @@
                 }                    
                }                
              ?>
-              <form action="user-interaction/login.php" method="POST">
+              <form action="user-interaction/login.php" id="login-form" method="POST">
                 <input
                   type="email"
                   name='email'

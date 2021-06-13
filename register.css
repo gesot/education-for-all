@@ -129,6 +129,13 @@
   top: -15px;
 }
 
+#password-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -15px;
+}
+
 ::placeholder {
   color: rgb(180, 180, 180);
   font-size: 16px;
