@@ -42,6 +42,12 @@ p {
   z-index: 1;
   position: absolute;
   width: 100%;
+  height: 97vh;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   clip-path: circle(0% at 0 50%);
 }
 
@@ -132,16 +138,20 @@ p {
 @media (max-width: 1200px) {
   .img-slider {
     width: 100%;
-    height: 375px;
   }
 
   .img-slider .slide .info {
-    padding: 50px 50px;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    transform: unset !important;
+    left: unset;
+    top: 30;
   }
 
   .img-slider .slide .info h2 {
-    font-size: 70px;
-    padding-top: 30px;
+    font-size: 90px;
+    text-align: center;
   }
 
   .img-slider .slide .info p {
@@ -163,7 +173,6 @@ p {
 @media (max-width: 820px) {
   .img-slider {
     width: 100%;
-    height: 375px;
   }
 
   .img-slider .slide .info {
@@ -194,7 +203,6 @@ p {
 @media (max-width: 620px) {
   .img-slider {
     width: 100%;
-    height: 250px;
   }
 
   .img-slider .slide .info {
@@ -224,7 +232,6 @@ p {
 @media (max-width: 420px) {
   .img-slider {
     width: 100%;
-    height: 250px;
   }
   .img-slider .slide img {
     height: 250px;
@@ -259,7 +266,6 @@ p {
 @media (max-width: 320px) {
   .img-slider {
     width: auto;
-    height: 250px;
   }
 
   .img-slider .slide .info {
@@ -581,7 +587,7 @@ footer .row > div {
 
   .img-slider .slide .info {
     position: absolute;
-    top: 0;
+    top: 30%;
     text-align: center;
     transform: unset !important;
     left: unset;
