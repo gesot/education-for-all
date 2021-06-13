@@ -18,8 +18,6 @@
 
 <body>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search id/name...">
-
 <script>
 function myFunction() {
   // Declare variables
@@ -47,13 +45,15 @@ function myFunction() {
 </script>
 
 <!----------START OF ROWS---------->
+    <section class="stats" id="stats">
     <?php include("user-interaction/stats.php"); ?>
+    </section>
 <!----------END OF ROWS---------->
 
 <!----------START OF TABLE---------->
-
-
+    <section id="userTable">
     <h2 style="margin-left: 20px;">Users</h2>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search id/name...">
     <hr>
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
@@ -62,6 +62,7 @@ function myFunction() {
     </div>
     </div>
     </div>
+    </section>
 
     
     <section id="commentTable">
@@ -81,6 +82,29 @@ function myFunction() {
         </tr>
         </thead><tbody>
         <?php include("user-interaction/comment-table.php") ?>
+        </tbody> 
+      </table>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="messageTable">
+    <h2 style="margin-left: 20px;">Messages</h2>
+    <hr>
+    <div class="container-fluid" style="padding-bottom:100px" >
+    <div class="row">
+    <div class="col-md-12" style="overflow-y: scroll;height: 400px;">  
+        <table class='comment-table' style='margin-left: 50px; margin-bottom: 100px;'>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Message</th>
+            <th>Manage</th>
+        </tr>
+        </thead><tbody>
+        <?php include("user-interaction/message-table.php") ?>
         </tbody> 
       </table>
     </div>

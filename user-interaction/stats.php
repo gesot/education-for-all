@@ -17,6 +17,7 @@
         <div class='col-md-1'>
         </div>
         <div class='col-md-3'>
+        <a href='../admin-page.php#userTable'>
         <div class='stat-box'>
 
         <div class='container-fluid'>
@@ -28,7 +29,6 @@
                   $totalUsers[0]
               </p>
           </div>
-
           </div>
           <div class='col-md-5' >
             <img src='images\icons\user.png' >  
@@ -36,9 +36,11 @@
           </div>
         </div>
         </div>
+        </a>
         </div>
         <div class='col-md-4'>
         <div class='stat-box'>
+        <a href='../admin-page.php#commentTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >
@@ -56,10 +58,12 @@
               </div>
           </div>
         </div>
+        </a>
         </div>
 
         <div class='col-md-3'>
         <div class='stat-box'>
+        <a href='../admin-page.php#messageTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >
@@ -76,6 +80,7 @@
                 </div>
               </div>
           </div>
+          </a>
           </div>
         </div>
         <div class='col-md-1'>

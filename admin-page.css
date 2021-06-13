@@ -15,7 +15,9 @@ body {
 }
 
 /*----------START OF BOXES----------*/
-
+.stats a{
+  color: transparent;
+}
 .stat-box {
   margin: 0 auto;
   width: 20em;
@@ -77,7 +79,10 @@ body {
 .content-table tbody td {
   color: #011640;
 }
-
+.content-table a,
+.comment-table a{
+  color: #011640;
+}
 /*----------END OF TABLE----------*/
 .comment-table {
   border-collapse: collapse;

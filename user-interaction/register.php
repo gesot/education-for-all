@@ -19,6 +19,7 @@ if (isset($_POST)) {
   if (mysqli_query($connection, $sqlQuery)) {
     echo "New record created successfully";
     $_SESSION['isLogged'] = true;
+    $_SESSION['username'] = $username;
     header('Location: ../home.php');
   } else {
     echo "Error: " . $sqlQuery . "<br>" . mysqli_error($connection);
