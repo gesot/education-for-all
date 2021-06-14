@@ -10,7 +10,7 @@
                 <td> <?php echo $result[1] ?> </td>
                 <td> <?php echo $result[2] ?> </td>
                 <td> <?php echo $result[3] ?> </td>
-                <td><a href="delete-comment.php?id=<?php echo $result[0]; ?>">Delete</a></td>
+                <td><a href="./delete-comment.php?id=<?php echo $result[0]; ?>">Delete</a></td>
              </tr>
           <?php  } 
             

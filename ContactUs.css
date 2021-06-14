@@ -1,0 +1,162 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 97vh;
+  margin: auto;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/contact1.jpg);
+  background-position: center;
+  background-size: cover;
+
+  padding: 40px 0;
+}
+
+.contact-wrap {
+  background-image: linear-gradient(#16495f, #1c6b8d);
+  background-color: transparent;
+  border: 1px solid rgb(146 146 146 / 36%);
+  padding: 35px;
+  padding-top: 100px;
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  margin: 30px;
+  margin-bottom: 80px;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: #fff;
+  margin: 240px auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 500px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #0e2c3d;
+  border: 1px solid rgb(146, 146, 146);
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.contact-form-text::placeholder {
+  color: rgb(180, 180, 180);
+  font-size: 16px;
+}
+
+.contact-form-text:hover {
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 200px;
+}
+
+.contact-form .btn {
+  width: 100%;
+  background: transparent;
+  background: linear-gradient(to right, #6ddec7, #46c0c0);
+  border: 1px solid rgb(88, 88, 88);
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  color: #fff;
+  background: transparent;
+  background: #4fb6b6;
+  transition: unset;
+  border-color: rgb(235, 235, 235);
+}
+
+#name-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -30px;
+  left: 5px;
+}
+#email-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -30px;
+  left: 5px;
+}
+
+#phonenumber-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -30px;
+  left: 5px;
+}
+
+#message-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -30px;
+  left: 5px;
+}
+
+@media all and (max-width: 1200px) {
+  .contact-wrap {
+    width: 55%;
+  }
+  .contact-wrap h1 {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .contact-wrap {
+    width: 75%;
+  }
+  .contact-wrap h1 {
+    font-size: 37px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 367px) {
+  .contact-wrap {
+    width: 75%;
+  }
+  .contact-wrap h1 {
+    font-size: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}

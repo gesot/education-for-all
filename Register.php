@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Log In/Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="Register.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link

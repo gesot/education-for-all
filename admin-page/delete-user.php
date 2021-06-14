@@ -3,5 +3,5 @@
     $IDUser=$_GET['userID'];
     $query = "DELETE FROM `user` WHERE `id` = $IDUser";
     $deleteUser = mysqli_query($connection, $query);
-    header('Location: admin-page.php');
+    header('Location: ./admin-page.php');
 ?>

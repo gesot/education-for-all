@@ -18,6 +18,6 @@
         $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
         $comid=$_GET['id'];
         deleteComments($comid, $connection);      
-        header('Location: admin-page.php#commentTable');
+        header('Location: ./admin-page.php#commentTable');
     
 ?>

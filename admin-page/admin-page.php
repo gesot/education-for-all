@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="admin-page.css">
+    <link rel="stylesheet" href="./admin-page.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
@@ -46,7 +46,7 @@ function myFunction() {
 
 <!----------START OF ROWS---------->
     <section class="stats" id="stats">
-    <?php include("stats.php"); ?>
+    <?php include("./stats.php"); ?>
     </section>
 <!----------END OF ROWS---------->
 
@@ -58,7 +58,7 @@ function myFunction() {
     <div class="container-fluid" style="padding-bottom:100px" >
     <div class="row">
     <div class="col-md-7" style="overflow-y: scroll;height: 400px;">  
-    <?php include("table-users.php") ?>
+    <?php include("./table-users.php") ?>
     </div>
     </div>
     </div>
@@ -81,7 +81,7 @@ function myFunction() {
             <th>Manage</th>
         </tr>
         </thead><tbody>
-        <?php include("table-comments.php") ?>
+        <?php include("./table-comments.php") ?>
         </tbody> 
       </table>
     </div>
@@ -105,7 +105,7 @@ function myFunction() {
         </tr>
         </thead>
         <tbody>
-        <?php include("table-messages.php") ?>
+        <?php include("./table-messages.php") ?>
         </tbody> 
       </table>
     </div>

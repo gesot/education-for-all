@@ -3,5 +3,5 @@
     $IDUser=$_GET['userID'];
     $query = "INSERT INTO admin (userID) VALUES ('$IDUser')";
     $querySetAdmin= mysqli_query($connection, $query);
-    header('Location: admin-page.php');
+    header('Location: ./admin-page.php');
 ?>

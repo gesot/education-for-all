@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Education For All- Information</title>
 		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="contact.css">
+		<link rel="stylesheet" href="ContactUs.css">
 		
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com">

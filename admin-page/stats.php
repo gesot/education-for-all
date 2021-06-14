@@ -16,7 +16,7 @@
       <div class='row'>
         
         <div class='col-md-4' >
-        <a href='admin-page.php#userTable'>
+        <a href='./admin-page.php#userTable'>
         <div class='stat-box'>
 
         <div class='container-fluid'>
@@ -39,7 +39,7 @@
         </div>
         <div class='col-md-4'>
         <div class='stat-box'>
-        <a href='admin-page.php#commentTable'>
+        <a href='./admin-page.php#commentTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >
@@ -62,7 +62,7 @@
 
         <div class='col-md-4'>
         <div class='stat-box'>
-        <a href='admin-page.php#messageTable'>
+        <a href='./admin-page.php#messageTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >

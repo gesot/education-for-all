@@ -3,5 +3,5 @@
     $IDUser=$_GET['userID'];
     $query = "DELETE FROM `message` WHERE `id` = $IDUser";
     $deleteMessage = mysqli_query($connection, $query);
-    header('Location: admin-page.php#messageTable');
+    header('Location: ./admin-page.php#messageTable');
 ?>
