@@ -16,7 +16,7 @@
       <div class='row'>
         
         <div class='col-md-4' >
-        <a href='../admin-page.php#userTable'>
+        <a href='admin-page.php#userTable'>
         <div class='stat-box'>
 
         <div class='container-fluid'>
@@ -30,7 +30,7 @@
           </div>
           </div>
           <div class='col-md-5'>
-            <img class='img-responsive' src='images\icons\user.png' >  
+            <img class='img-responsive' src='../images/icons/user.png' >  
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
         </div>
         <div class='col-md-4'>
         <div class='stat-box'>
-        <a href='../admin-page.php#commentTable'>
+        <a href='admin-page.php#commentTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >
@@ -52,7 +52,7 @@
     
               </div>
               <div class='col-md-5' >
-                <img class='img-responsive' src='images\icons\comment.png' >  
+                <img class='img-responsive' src='../images/icons/comment.png' >  
                 </div>
               </div>
           </div>
@@ -62,7 +62,7 @@
 
         <div class='col-md-4'>
         <div class='stat-box'>
-        <a href='../admin-page.php#messageTable'>
+        <a href='admin-page.php#messageTable'>
           <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-7' >
@@ -75,7 +75,7 @@
     
               </div>
               <div class='col-md-5' >
-                <img class='img-responsive' src='images\icons\message.png' >  
+                <img class='img-responsive' src='../images/icons/message.png' >  
                 </div>
               </div>
           </div>

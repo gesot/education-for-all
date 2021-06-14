@@ -117,7 +117,7 @@ if (isset($_GET['page_id'])) {
     if ($loggedIn) {
         echo '<a href="#" class="write_comment_btn" data-comment-id="-1">Write Comment</a>';
     } else
-        echo '<p> <a href="Register.php" style="color:white">Log in</a> or <a href="Register.php" style="color:white">Sign up</a> to write a comment!' ?>
+        echo '<p> <a href="../Register.php" style="color:white">Log in</a> or <a href="../Register.php" style="color:white">Sign up</a> to write a comment!' ?>
 </div>
 <?= show_write_comment_form() ?>
 

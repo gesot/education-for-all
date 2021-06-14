@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="information.css">
-  <link href="comments-final.css" rel="stylesheet" type="text/css">
+  <link href="user-interaction/comments.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
@@ -136,7 +136,7 @@
   <!--javascript code using fetch API to retrieve all comments-->
   <script>
     const comments_page_id = 1; // Unique page ID (must be unique to show only respective comments of each page)
-    fetch("comments-final.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
+    fetch("user-interaction/comments.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
       document.querySelector(".comments").innerHTML = data;
       document.querySelectorAll(".comments .write_comment_btn, .comments .reply_comment_btn").forEach(element => {
         element.onclick = event => {
@@ -149,7 +149,7 @@
       document.querySelectorAll(".comments .write_comment form").forEach(element => {
         element.onsubmit = event => {
           event.preventDefault();
-          fetch("comments-final.php?page_id=" + comments_page_id, {
+          fetch("user-interaction/comments.php?page_id=" + comments_page_id, {
             method: 'POST',
             body: new FormData(element)
           }).then(response => response.text()).then(data => {

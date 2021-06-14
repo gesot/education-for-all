@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>footer</title>
 </head>
@@ -62,8 +62,8 @@
           <div class="col-12 col-md-4">
             <h2>Take action with us!</h2>
             <div class="content">
-            <a href="ContactUs.php" class="work-with-us">Contact Us</a>    
-            <a href="Register.php" class="work-with-us">Log in/Register</a>     
+            <a href="../ContactUs.php" class="work-with-us">Contact Us</a>    
+            <a href="../Register.php" class="work-with-us">Log in/Register</a>     
             </div> 
           </div>
         </div>

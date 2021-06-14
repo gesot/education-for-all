@@ -5,7 +5,7 @@
   <?php include('nav/navbar.php'); ?>
   <meta charset="utf-8" />
   <title>Education For All</title>
-  <link rel="stylesheet" href="comments-final.css">
+  <link rel="stylesheet" href="user-interaction/comments.css">
   <link rel="stylesheet" href="WaysToHelp.css" />
   <link rel="stylesheet" href="index.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -418,7 +418,7 @@
   <!--javascript code using fetch API to retrieve all comments-->
   <script>
     const comments_page_id = 3; // Unique page ID (must be unique to show only respective comments of each page)
-    fetch("comments-final.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
+    fetch("user-interaction/comments.php?page_id=" + comments_page_id).then(response => response.text()).then(data => {
       document.querySelector(".comments").innerHTML = data;
       document.querySelectorAll(".comments .write_comment_btn, .comments .reply_comment_btn").forEach(element => {
         element.onclick = event => {
@@ -431,7 +431,7 @@
       document.querySelectorAll(".comments .write_comment form").forEach(element => {
         element.onsubmit = event => {
           event.preventDefault();
-          fetch("comments-final.php?page_id=" + comments_page_id, {
+          fetch("user-interaction/comments.php?page_id=" + comments_page_id, {
             method: 'POST',
             body: new FormData(element)
           }).then(response => response.text()).then(data => {

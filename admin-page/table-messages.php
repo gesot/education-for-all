@@ -10,7 +10,7 @@
                     <td><?php echo $result[1] ?></td>
                     <td><?php echo $result[2] ?></td>
                     <td>
-                        <a id='deleteUser' href="user-interaction\delete-message.php?userID=<?php echo $result[0]; ?>">Delete</a>
+                        <a id='deleteUser' href="delete-message.php?userID=<?php echo $result[0]; ?>">Delete</a>
                     </td>
                  </tr>
   <?php      }
