@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-
     <?php include('nav/navbar.php'); ?>
     <meta charset="utf-8">
     <title>Education For All- Docs/Films/Series</title>

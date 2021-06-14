@@ -103,7 +103,8 @@ function myFunction() {
             <th>Message</th>
             <th>Manage</th>
         </tr>
-        </thead><tbody>
+        </thead>
+        <tbody>
         <?php include("user-interaction/message-table.php") ?>
         </tbody> 
       </table>

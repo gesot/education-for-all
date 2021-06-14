@@ -12,11 +12,10 @@
     $totalMessages = mysqli_fetch_array($queryMessages);
 
     echo"
-    <div class='container-fluid' name='plain-header' style='margin-top: 1em; padding: 5em'>
-      <div class='row align-items-center'>
-        <div class='col-md-1'>
-        </div>
-        <div class='col-md-3'>
+    <div class='container-fluid' style='margin-top: 1em; padding: 5em'>
+      <div class='row'>
+        
+        <div class='col-md-4' >
         <a href='../admin-page.php#userTable'>
         <div class='stat-box'>
 
@@ -30,8 +29,8 @@
               </p>
           </div>
           </div>
-          <div class='col-md-5' >
-            <img src='images\icons\user.png' >  
+          <div class='col-md-5'>
+            <img class='img-responsive' src='images\icons\user.png' >  
             </div>
           </div>
         </div>
@@ -53,7 +52,7 @@
     
               </div>
               <div class='col-md-5' >
-                <img src='images\icons\comment.png' >  
+                <img class='img-responsive' src='images\icons\comment.png' >  
                 </div>
               </div>
           </div>
@@ -61,7 +60,7 @@
         </a>
         </div>
 
-        <div class='col-md-3'>
+        <div class='col-md-4'>
         <div class='stat-box'>
         <a href='../admin-page.php#messageTable'>
           <div class='container-fluid'>
@@ -76,15 +75,14 @@
     
               </div>
               <div class='col-md-5' >
-                <img src='images\icons\message.png' >  
+                <img class='img-responsive' src='images\icons\message.png' >  
                 </div>
               </div>
           </div>
           </a>
           </div>
         </div>
-        <div class='col-md-1'>
-        </div>
+        
       </div>
     </div>
     ";
