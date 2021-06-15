@@ -6,7 +6,7 @@ body {
   background-color: #f3f1f1;
 }
 /* search bar styling */
-#myInput {
+.searchBox {
   display: block;
   padding: 6px 10px;
   margin-top: 8px;
