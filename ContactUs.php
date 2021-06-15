@@ -14,7 +14,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
     	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
-		<script src="contactus-validation.js"></script>
+		<script src="user-interaction/contactus-validation.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	</head>
