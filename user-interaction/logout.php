@@ -3,5 +3,5 @@
     unset($_SESSION['username']);
     unset($_SESSION['password']);
     $_SESSION['isLogged'] = false;
-    header('Location: ../Register.php');
+    header('Location: /PSPI/Register.php');
 ?>
