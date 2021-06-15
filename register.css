@@ -50,6 +50,10 @@
   transform-style: preserve-3d;
   transition: transform 1s;
 }
+
+.card {
+  background-color: transparent !important;
+}
 .card-front,
 .card-back {
   position: absolute;
