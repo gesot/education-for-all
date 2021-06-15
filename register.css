@@ -122,6 +122,13 @@
   top: -15px;
 }
 
+#login-password-error {
+  display: block;
+  position: relative;
+  color: #e87c03;
+  top: -15px;
+}
+
 #register-password-error {
   display: block;
   position: relative;
@@ -207,6 +214,7 @@ footer button {
 .card-front span {
   font-size: 13px;
   margin-left: 5px;
+  color: #fff;
 }
 .card .btn {
   margin-top: 70px !important;

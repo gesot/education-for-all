@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Log In/Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Register.css" />
+    <link rel="stylesheet" href="register.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -31,7 +31,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
-    <script src="register-validation.js"></script>
+    <script src="user-interaction/register-validation.js"></script>
   </head>
 
   <body>
@@ -64,6 +64,7 @@
                   type="password"
                   name='password'
                   class="input-box"
+                  id = "login-password" 
                   placeholder="Password"
                   required
                 />
