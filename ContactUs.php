@@ -26,7 +26,7 @@
 	<div class="contact-section">
     <div class="contact-wrap">
 		<h1>Contact Us</h1>
-		<form class="contact-form" method="post" action="./user-interaction/contactus.php">
+		<form class="contact-form" method="post" action="user-interaction/contactus.php">
 			<input type="text" class="contact-form-text" placeholder="Your name" name="name">
 			<input type="email" class="contact-form-text" placeholder="Your email" name="email">
 			<input type="text" class="contact-form-text" placeholder="Your phone(optional)" name="phonenumber">
