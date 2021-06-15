@@ -20,7 +20,6 @@
 <body>
 
     <section class="foo">
-        <!-- START OF INFORMATION PAGE CODE -->
         <div class="d-flex flex-column justify-content-center align-items-center text-center infostart text-wrap">
             <div class="row justify-content-center">
                 <h1 class="imgtitle">Documentaries, Films & Series on <span id="titlecrl">Education</span> </h1>
@@ -33,6 +32,7 @@
             </div>
         </div>
     </section>
+    
     <div class="container" id="list">
         <div class="row" style="margin-top: 50px;">
             <h2>List of Docs/Films/Series Suggestions</h2>

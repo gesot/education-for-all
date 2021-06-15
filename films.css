@@ -1,3 +1,4 @@
+
 .foo {
 	background-image: radial-gradient(
 			circle,
@@ -5,7 +6,7 @@
 			rgba(0, 0, 66, 0.5270483193277311) 32%,
 			rgba(1, 0, 51, 0.7679446778711485) 100%
 		),
-		url("/images/films.webp");
+		url("./images/films.webp");
 }
 
 .description {

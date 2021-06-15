@@ -9,8 +9,6 @@ if (!$connection) {
 }
 
 //write mysql query
-
-//$errors = array();
 //if statement checks if the 'create account' button has been pressed
 if (isset($_POST)) {
   $name = validateData($_POST['name']);
@@ -27,7 +25,6 @@ if (isset($_POST)) {
     echo "Error: " . $sqlQuery . "<br>" . mysqli_error($connection);
   }
 }
-//do some other stuff here
 
 function validateData($input)
 {

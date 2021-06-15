@@ -25,24 +25,24 @@
 		</label>
 		<input type="checkbox" id="btn">
 		<ul>
-			<li><a href="../home.php">Home</a></li>
+			<li><a href="./home.php">Home</a></li>
 			<li>
-				<a href="../information.php">Information</a>
+				<a href="./information.php">Information</a>
 				<input type="checkbox" id="btn-1">
 			</li>
 			<li>
-				<a href="../WaysToHelp.php">Ways to Help</a>
+				<a href="./WaysToHelp.php">Ways to Help</a>
 				<input type="checkbox" id="btn-2">
 			</li>
 			<li><a href="learn-now.php">Learn Now<span class="fa fa-caret-down"></span></a>
 				<ul>
-					<li><a href="../learn-now.php#kids-section">Kids</a></li>
-					<li><a href="../learn-now.php#teenagers-section">Teenagers</a></li>
-					<li><a href="../learn-now.php#adults-section">Adults</a></li>
+					<li><a href="./learn-now.php#kids-section">Kids</a></li>
+					<li><a href="./learn-now.php#teenagers-section">Teenagers</a></li>
+					<li><a href="./learn-now.php#adults-section">Adults</a></li>
 				</ul>
 			</li>
-			<li><a href="../films.php">Docs/Films/Series</a></li>
-			<li><a href="../ContactUs.php">Contact Us</a></li>
+			<li><a href="./films.php">Docs/Films/Series</a></li>
+			<li><a href="./ContactUs.php">Contact Us</a></li>
 			<li><?php include('logged-nav.php');?></li>
 		</ul>
 	</nav>
