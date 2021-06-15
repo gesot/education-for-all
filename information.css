@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 .centeredinfotext {
   position: absolute;

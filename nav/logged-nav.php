@@ -1,6 +1,5 @@
 <?php
     session_start();
-    //$_SESSION['username'] = " ";
     $connection = mysqli_connect('localhost', 'pspi', 'pspi2021', 'users');
     if(isset($_SESSION['isLogged'])){
     $id = $_SESSION['id'] ?? "";
